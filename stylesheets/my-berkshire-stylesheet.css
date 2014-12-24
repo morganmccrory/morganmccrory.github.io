@@ -1,3 +1,42 @@
 html {
-  background-color: red;
+  background-color: #ffffff;
+}
+
+p {
+  color: #000080;
+}
+
+a:link {
+  color: #800080;
+}
+
+a:visited {
+  color: #ff0000;
+}
+
+ul {
+  display: inline-block;
+}
+
+span {
+  font-size: 8px;
+}
+
+span2 {
+  font-size: 22px;
+}
+
+.header {
+  font-weight: bold;
+  margin: auto;
+  font-size: 12px;
+  white-space: pre;
+}
+
+#top_header {
+font-size: 18px;
+}
+
+#bottom_header {
+  font-size: 14px;
 }
