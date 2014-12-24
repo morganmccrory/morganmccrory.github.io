@@ -1,8 +1,6 @@
 html {
   background-color: #ffffff;
-}
-
-p {
+  font-family: Times;
   color: #000080;
 }
 
@@ -22,14 +20,14 @@ span {
   font-size: 8px;
 }
 
-span2 {
+.capital {
   font-size: 22px;
 }
 
 .header {
   font-weight: bold;
-  margin: auto;
-  font-size: 12px;
+  margin: center;
+  font-size: 10px;
   white-space: pre;
 }
 
