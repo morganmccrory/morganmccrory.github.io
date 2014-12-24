@@ -12,10 +12,6 @@ a:visited {
   color: #ff0000;
 }
 
-ul {
-  display: inline;
-}
-
 span {
   font-size: 11px;
 }
@@ -24,9 +20,17 @@ span {
   font-size: 32px;
 }
 
+.big {
+  font-size: 16px;
+}
+
+.very_tiny {
+  font-size: 10px;
+}
+
 #header {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
   white-space: pre-line;
 }
@@ -47,4 +51,5 @@ margin-top: 15px;
 .footer {
   text-align: center;
   white-space: pre-line;
+  font-size: 14px;
 }
