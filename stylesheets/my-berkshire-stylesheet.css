@@ -28,7 +28,7 @@ span {
   font-size: 10px;
 }
 
-#header {
+.header {
   font-weight: bold;
   font-size: 14px;
   text-align: center;
@@ -39,7 +39,7 @@ h1 {
 font-size: 18px;
 text-align: center;
 font-weight: bold;
-margin-top: 15px;
+margin-top: 10px;
 }
 
 #bottom_header {
