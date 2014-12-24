@@ -62,16 +62,16 @@ margin-top: 12px;
 
 #left {
   float: left;
-  width: 50%;
-  margin-top: -10px;
-  margin-left: 40px;
+  width: 40%;
+  margin-top: -30px;
+  margin-left: 50px;
   white-space: pre-line;
 }
 
 #right {
   float: right;
-  width: 50%;
-  margin-top: -10px;
+  width: 40%;
+  margin-top: -30px;
   white-space: pre-line;
 }
 
