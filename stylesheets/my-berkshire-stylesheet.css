@@ -8,12 +8,10 @@ html {
 
 a:link {
   color: #800080;
-  font-size: 16px;
 }
 
 a:visited {
   color: #ff0000;
-  font-size: 16px;
 }
 
 span {
@@ -58,20 +56,24 @@ margin-top: 12px;
   font-size: 16px;
   text-align: center;
   font-weight: bold;
+  margin-top: -3px;
 }
 
 #left {
   float: left;
   width: 40%;
-  margin-top: -30px;
-  margin-left: 50px;
+  font-size: 16px;
+  margin-top: -40px;
+  margin-left: 60px;
   white-space: pre-line;
 }
 
 #right {
   float: right;
   width: 40%;
-  margin-top: -30px;
+  font-size: 16px;
+  margin-top: -40px;
+  margin-left: -60px;
   white-space: pre-line;
 }
 
