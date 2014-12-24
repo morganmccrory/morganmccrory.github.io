@@ -13,11 +13,11 @@ a:visited {
 }
 
 ul {
-  display: inline-block;
+  display: inline;
 }
 
 span {
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .capital {
@@ -28,6 +28,7 @@ span {
   font-weight: bold;
   font-size: 13px;
   text-align: center;
+  white-space: pre-line;
 }
 
 #top_header {
@@ -41,4 +42,8 @@ margin-top: 15px;
   font-size: 16px;
   text-align: center;
   font-weight: bold;
+}
+
+.footer {
+  text-align: center;
 }
