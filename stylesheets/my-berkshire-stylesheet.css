@@ -2,7 +2,7 @@ html {
   background-color: #ffffff;
   font-family: "Times New Roman";
   color: #000080;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 a:link {
@@ -29,16 +29,18 @@ span {
   font-size: 10px;
 }
 
+#inc {
+   font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+}
+
 .header {
   font-weight: bold;
   font-size: 13px;
   text-align: center;
   white-space: pre-line;
-  margin: -7px;
-}
-
-ul {
-
+  margin: -10px;
 }
 
 h1 {
@@ -52,6 +54,7 @@ margin-top: 12px;
   font-size: 16px;
   text-align: center;
   font-weight: bold;
+  margin-top: 5px;
 }
 
 #left {
