@@ -46,6 +46,7 @@ span {
   text-align: center;
   white-space: pre-line;
   margin-top: -10px;
+  margin-bottom: 5px;
 }
 
 h1 {
@@ -66,14 +67,12 @@ margin-top: 12px;
   width: 50%;
   margin-top: -10px;
   margin-left: -30px;
-  white-space: pre-line;
 }
 
 #right {
   float: right;
   width: 50%;
   margin-top: -10px;
-  white-space: pre-line;
 }
 
 .footer {
