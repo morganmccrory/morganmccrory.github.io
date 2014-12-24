@@ -21,10 +21,10 @@ span {
 }
 
 .capital {
-  font-size: 22px;
+  font-size: 30px;
 }
 
-.header {
+#header {
   font-weight: bold;
   font-size: 8px;
   text-align: center;
