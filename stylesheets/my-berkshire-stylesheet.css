@@ -30,9 +30,9 @@ span {
 
 .header {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
-  white-space: normal;
+  white-space: pre-line;
 }
 
 h1 {
@@ -51,15 +51,18 @@ margin-top: 10px;
 #left {
   float: left;
   width: 50%;
+  white-space: pre-line;
 }
 
 #right {
   float: right;
   width: 50%;
+  white-space: pre-line;
 }
 
 .footer {
   text-align: center;
   white-space: pre-line;
   font-size: 14px;
+  clear: both;
 }
