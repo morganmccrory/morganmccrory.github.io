@@ -26,13 +26,13 @@ span {
 
 .header {
   font-weight: bold;
-  margin: center;
-  font-size: 10px;
+  font-size: 8px;
   white-space: pre;
+  text-align: center;
 }
 
 #top_header {
-font-size: 18px;
+font-size: 2px;
 }
 
 #bottom_header {
