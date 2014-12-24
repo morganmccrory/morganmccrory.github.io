@@ -1,6 +1,6 @@
 html {
   background-color: #ffffff;
-  font-family: Times;
+  font-family: "Times New Roman";
   color: #000080;
 }
 
@@ -26,19 +26,19 @@ span {
 
 #header {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
 }
 
 #top_header {
-font-size: 20px;
+font-size: 18px;
 text-align: center;
 font-weight: bold;
-margin-top: 10px;
+margin-top: 15px;
 }
 
 #bottom_header {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   font-weight: bold;
 }
