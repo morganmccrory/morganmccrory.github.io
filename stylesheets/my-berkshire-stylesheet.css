@@ -3,14 +3,18 @@ html {
   font-family: "Times New Roman";
   color: #000080;
   font-size: 14px;
+  white-space: pre-line;
+  clear: both;
 }
 
 a:link {
   color: #800080;
+  font-size: 16px;
 }
 
 a:visited {
   color: #ff0000;
+  font-size: 16px;
 }
 
 span {
@@ -30,9 +34,10 @@ span {
 }
 
 #inc {
-   font-weight: bold;
+  font-weight: bold;
   font-size: 13px;
   text-align: center;
+  margin-left: 10px;
 }
 
 .header {
@@ -40,7 +45,7 @@ span {
   font-size: 13px;
   text-align: center;
   white-space: pre-line;
-  margin: -10px;
+  margin-top: -10px;
 }
 
 h1 {
@@ -54,18 +59,20 @@ margin-top: 12px;
   font-size: 16px;
   text-align: center;
   font-weight: bold;
-  margin-top: 5px;
 }
 
 #left {
   float: left;
   width: 50%;
+  margin-top: -10px;
+  margin-left: -30px;
   white-space: pre-line;
 }
 
 #right {
   float: right;
   width: 50%;
+  margin-top: -10px;
   white-space: pre-line;
 }
 
