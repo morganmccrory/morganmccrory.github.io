@@ -26,7 +26,7 @@ span {
 
 #header {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -34,10 +34,11 @@ span {
 font-size: 20px;
 text-align: center;
 font-weight: bold;
+margin-top: 10px;
 }
 
 #bottom_header {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   font-weight: bold;
 }
