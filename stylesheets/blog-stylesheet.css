@@ -23,9 +23,9 @@ body {
    position: fixed;
    z-index: -1;
    top: 30px;
-   left: 75px;
-   right: 110px;
+   left: 80px;
+   right: 80px;
    height: 100%;
-   border: 20px solid white;
+   border: 1px solid white;
    background-color: white;
 }
