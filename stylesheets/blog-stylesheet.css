@@ -3,10 +3,10 @@ body {
 }
 
 .background {
-  margin-top: 15px;
-  margin-right: 50px;
-  margin-left: 50px;
-  background color: white;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: white;
   border: 2px solid #d3d3d3;
   border-radius: 10px;
   padding-top: 5px;
