@@ -16,6 +16,7 @@ body {
 
 .background:before {
    content: " ";
+   border-radius: 20px;
    position: absolute;
    z-index: -1;
    top: 20px;
