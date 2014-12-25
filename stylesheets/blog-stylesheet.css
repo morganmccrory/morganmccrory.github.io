@@ -19,8 +19,9 @@ body {
    border-radius: 20px;
    position: absolute;
    z-index: -1;
-   top: 20px;
-   left: 20px;
-   right: 20px;
+   top: 30px;
+   left: 80px;
+   right: 80px;
+   bottom: -20px;
    border: 20px solid white;
 }
