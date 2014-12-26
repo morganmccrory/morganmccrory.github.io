@@ -73,10 +73,13 @@ body {
 
 #left_image {
   float: left;
-  height: 100px;
-  width: 200px;
   margin-top: 50px;
-  text-align: center;
+  width: 45%;
+}
+
+#left_image img {
+  width: 100%;
+  height: auto;
 }
 
 h4 {
