@@ -72,3 +72,8 @@ body {
   position: absolute;
   padding: 1px;
 }
+
+.main_right {
+  float: right;
+  width: 50%;
+}
