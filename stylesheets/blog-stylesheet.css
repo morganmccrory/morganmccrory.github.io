@@ -16,18 +16,6 @@ body {
   padding-right: 10px;
 }
 
-.background:before {
-   content: " ";
-   border-radius: 20px;
-   z-index: -1;
-   top: 22px;
-   left: 67px;
-   right: 70px;
-   height: 100%;
-   border: 1px solid white;
-   background-color: white;
-}
-
 #navigation_bar {
   height: 50px;
   margin-right: -29px;
