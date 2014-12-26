@@ -6,7 +6,6 @@ body {
   margin-top: 30px;
   margin-right: 85px;
   margin-left: 75px;
-  position: fixed;
   height: 100%;
   background-color: white;
   border: 2px solid #d3d3d3;
@@ -20,7 +19,6 @@ body {
 .background:before {
    content: " ";
    border-radius: 20px;
-   position: fixed;
    z-index: -1;
    top: 22px;
    left: 67px;
