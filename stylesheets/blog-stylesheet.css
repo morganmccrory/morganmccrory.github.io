@@ -73,6 +73,8 @@ body {
 
 #left_image {
   float: left;
+  margin-top: 50px;
+  text-align: center;
 }
 
 h4 {
@@ -80,6 +82,7 @@ h4 {
   color: #4A3F40;
   text-align: right;
   margin-top: -40px;
+  margin-right: 20px;
 }
 
 h1 {
