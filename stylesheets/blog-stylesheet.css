@@ -29,3 +29,11 @@ body {
    border: 1px solid white;
    background-color: white;
 }
+
+#navigation_bar {
+  height: 50px;
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+  background-color: #5d4a7d;
+}
