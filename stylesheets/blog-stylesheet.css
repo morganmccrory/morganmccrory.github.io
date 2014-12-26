@@ -47,5 +47,5 @@ body {
   font-family: Tahoma;
   margin-top: 20px;
   margin-left: 65px;
-  padding: 1px;
+  position: relative;
 }
