@@ -32,10 +32,19 @@ body {
 
 #navigation_bar {
   height: 50px;
-  margin-right: -20px;
-  margin-left: -30px;
+  margin-right: -30px;
+  margin-left: -50px;
   border-top: 2px solid #d3d3d3;
   border-bottom: 2px solid #d3d3d3;
   display: block;
   background-color: #5d4a7d;
+}
+
+#navigation_bar:before {
+   content: " ";
+   z-index: -1;
+   top: 22px;
+   margin-right: -30px;
+   margin-left: -50px;
+   background-color: #5d4a7d;
 }
