@@ -73,7 +73,8 @@ body {
 
 #left_image {
   float: left;
-  margin-top: 50px;
+  margin-top: 75px;
+  margin-left: 20px;
   width: 30%;
 }
 
