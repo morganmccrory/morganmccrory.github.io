@@ -36,11 +36,11 @@ body {
   margin-left: -50px;
   border-top: 2px dashed #d3d3d3;
   border-bottom: 2px dashed #d3d3d3;
-  display: inline-block;
+  display: block;
   background-color: #5d4a7d;
 }
 
-#navigation_bar a {
+#home {
   color: white;
   font-size: 20px;
   text-decoration: none;
@@ -49,5 +49,26 @@ body {
   margin-left: 65px;
   position: absolute;
   padding: 1px;
-  word-spacing: 20px;
+}
+
+#portfolio {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Tahoma;
+  margin-top: 10px;
+  margin-left: 100px;
+  position: absolute;
+  padding: 1px;
+}
+
+#contacts {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Tahoma;
+  margin-top: 10px;
+  margin-left: 135px;
+  position: absolute;
+  padding: 1px;
 }
