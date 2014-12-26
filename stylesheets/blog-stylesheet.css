@@ -71,9 +71,15 @@ body {
   width: 60%;
 }
 
+#left_image {
+  float: left;
+  height: 200px;
+  width: 300px;
+}
+
 h4 {
   font-size: 10pt;
-  color: #d3d3d3;
+  color: #4A3F40;
   text-align: right;
   margin-top: -40px;
 }
