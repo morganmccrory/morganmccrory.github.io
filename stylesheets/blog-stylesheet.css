@@ -72,12 +72,12 @@ body {
 h4 {
   color: #d3d3d3;
   text-align: right;
-  white-space: nowrap;
+  white-space: pre-line;
 }
 
 h1 {
   color: #5C9356;
   text-align: left;
-  font-size: 18px;
-  white-space: nowrap;
+  font-size: 18pt;
+  white-space: pre-line;
 }
