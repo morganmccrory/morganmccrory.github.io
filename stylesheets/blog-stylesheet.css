@@ -4,8 +4,7 @@ body {
 
 .background {
   margin-top: 30px;
-  margin-right: 85px;
-  margin-left: 75px;
+  text-align: center;
   min-height: 600px;
   height: auto !important;
   height: 100%;
