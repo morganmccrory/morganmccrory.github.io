@@ -68,7 +68,8 @@ body {
   font-family: Arial;
   font-size: 11pt;
   float: right;
-  width: 60%;
+  margin-right: 30px;
+  width: 50%;
 }
 
 #left_image {
