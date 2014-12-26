@@ -14,12 +14,13 @@ body {
   padding-top: 20px;
   padding-left: 30px;
   padding-right: 10px;
+  position: absolute;
 }
 
 #navigation_bar {
   height: 50px;
-  margin-right: -29px;
-  margin-left: -50px;
+  margin-right: -35px;
+  margin-left: -45px;
   border-top: 2px dashed #d3d3d3;
   border-bottom: 2px dashed #d3d3d3;
   display: block;
