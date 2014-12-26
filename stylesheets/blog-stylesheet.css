@@ -4,7 +4,8 @@ body {
 
 .background {
   margin-top: 30px;
-  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
   min-height: 600px;
   height: auto !important;
   height: 100%;
@@ -18,6 +19,10 @@ body {
   padding-left: 30px;
   padding-right: 10px;
   position: absolute;
+}
+
+.background img {
+  text-align: center;
 }
 
 #navigation_bar {
