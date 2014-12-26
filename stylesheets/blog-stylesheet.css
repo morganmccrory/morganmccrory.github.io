@@ -39,3 +39,9 @@ body {
   display: block;
   background-color: #5d4a7d;
 }
+
+#navigation_bar a {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
