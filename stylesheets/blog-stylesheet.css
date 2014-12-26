@@ -43,8 +43,8 @@ body {
 #navigation_bar:before {
    content: " ";
    z-index: -1;
-   top: 22px;
-   margin-right: -30px;
-   margin-left: -50px;
+   right: -30px;
+   left: -50px;
    background-color: #5d4a7d;
+   display: block;
 }
