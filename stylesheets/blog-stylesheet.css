@@ -3,9 +3,9 @@ body {
 }
 
 .background {
-  margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-top: 30px;
+  margin-right: 85px;
+  margin-left: 75px;
   position: fixed;
   height: 100%;
   background-color: white;
@@ -22,7 +22,7 @@ body {
    border-radius: 20px;
    position: fixed;
    z-index: -1;
-   top: 30px;
+   top: 20px;
    left: 80px;
    right: 70px;
    height: 100%;
