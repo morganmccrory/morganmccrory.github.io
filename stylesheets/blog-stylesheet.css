@@ -4,8 +4,8 @@ body {
 
 .background {
   margin-top: 30px;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 250px;
+  margin-left: 250px;
   min-height: 600px;
   height: auto !important;
   height: 100%;
@@ -22,6 +22,7 @@ body {
 }
 
 .background img {
+  display: block;
   text-align: center;
 }
 
