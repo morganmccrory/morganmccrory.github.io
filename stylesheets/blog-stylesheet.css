@@ -81,3 +81,9 @@ h1 {
   text-align: left;
   font-size: 22pt;
 }
+
+a {
+  color: #5d4a7d;
+  font-size: 10pt;
+  font-family: Arial;
+}
