@@ -41,11 +41,10 @@ body {
 }
 
 #navigation_bar a {
-  font-weight: bold;
   color: white;
   font-size: 20px;
   text-decoration: none;
-  font-family: Arial;
-  margin-left: 60px;
-  margin-top: 20px;
+  font-family: Tahoma;
+  margin-left: 65px;
+  margin-top: 30px;
 }
