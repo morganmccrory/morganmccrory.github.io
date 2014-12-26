@@ -36,7 +36,7 @@ body {
   margin-left: -50px;
   border-top: 2px dashed #d3d3d3;
   border-bottom: 2px dashed #d3d3d3;
-  display: block;
+  display: inline-block;
   background-color: #5d4a7d;
 }
 
@@ -49,6 +49,5 @@ body {
   margin-left: 65px;
   position: absolute;
   padding: 1px;
-  display: inline-block;
   word-spacing: 20px;
 }
