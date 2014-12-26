@@ -19,11 +19,11 @@ body {
 
 #navigation_bar {
   height: 50px;
-  width: 100%;
+  margin-right: -100px;
+  margin-left: 15px;
   border-top: 2px dashed #d3d3d3;
   border-bottom: 2px dashed #d3d3d3;
-  display: inline-block;
-  clear: both;
+  display: block;
   background-color: #5d4a7d;
 }
 
