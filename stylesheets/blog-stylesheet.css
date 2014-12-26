@@ -64,6 +64,7 @@ body {
 }
 
 .main_right {
+  font-family: Tahoma;
   float: right;
   width: 60%;
 }
