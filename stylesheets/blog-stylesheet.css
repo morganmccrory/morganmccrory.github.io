@@ -32,8 +32,8 @@ body {
 
 #navigation_bar {
   height: 50px;
- margin-right: 85px;
-  margin-left: 75px;
+  margin-right: -10px;
+  margin-left: -10px;
   border-top: 2px solid #d3d3d3;
   border-bottom: 2px solid #d3d3d3;
   display: block;
