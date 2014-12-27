@@ -106,3 +106,9 @@ a {
   font-size: 10pt;
   font-family: Arial;
 }
+
+#changing_picture {
+  border: 1px solid #5d4a7d;
+  height: 200px
+  width: auto;
+}
