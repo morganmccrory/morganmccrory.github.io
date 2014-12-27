@@ -109,6 +109,7 @@ a {
 
 #changing_picture {
   border: 1px solid #5d4a7d;
-  height: 200px
+  height: 300px
   width: auto;
+  text-align: center;
 }
