@@ -115,5 +115,6 @@ a {
 }
 
 p {
-  margin-top: -200px;
+  margin-top: -250px;
+  display: inline-block;
 }
