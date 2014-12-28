@@ -124,7 +124,8 @@ p {
 .nav_list {
   list-style-type: none;
   text-align: center;
-  position: relative;
+  position: absolute;
+  display: inline-block;
 }
 
 ul {
@@ -132,5 +133,4 @@ ul {
   margin-left: 5vh;
   list-style-type: none;
   text-align: center;
-  display: inline-block;
 }
