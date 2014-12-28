@@ -121,16 +121,11 @@ p {
   margin-top: -4px;
 }
 
-.nav_list {
-  list-style-type: none;
-  text-align: center;
-  position: absolute;
-  display: inline-block;
-}
-
 ul {
   position: relative;
   margin-left: 5vh;
   list-style-type: none;
   text-align: center;
+  text-align: center;
+  display: inline-block;
 }
