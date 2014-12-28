@@ -41,6 +41,7 @@ body {
   margin-right: 8vh;
   text-align: center;
   position: relative;
+  display: inline;
   padding: 1px;
 }
 
