@@ -111,10 +111,10 @@ a {
   border: 1px solid #5d4a7d;
   height: auto;
   width: auto;
-  display: inline-block;
+  float: left;
 }
 
 p {
-  margin-top: -250px;
+  float: right;
   display: inline-block;
 }
