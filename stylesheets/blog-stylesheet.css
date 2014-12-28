@@ -132,4 +132,5 @@ p {
 ul {
   position: relative;
   margin-left: 5vh;
+  display: inline;
 }
