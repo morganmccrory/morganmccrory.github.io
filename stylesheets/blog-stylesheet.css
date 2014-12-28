@@ -113,3 +113,7 @@ a {
   width: auto;
   float: left;
 }
+
+p {
+  margin-left: 10px;
+}
