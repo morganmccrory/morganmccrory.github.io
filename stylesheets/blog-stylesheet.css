@@ -131,4 +131,5 @@ p {
 ul {
   position: relative;
   margin-left: 5vh;
+  list-style-type: none;
 }
