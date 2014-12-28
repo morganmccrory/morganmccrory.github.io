@@ -31,17 +31,24 @@ body {
   background-color: #5d4a7d;
 }
 
-.nav_text {
+#navigation_bar ul {
+  margin: 0;
+  padding 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#navigation_bar ul li {
+  display: inline;
+
+}
+
+#navigation_bar ul li a {
   color: white;
   font-size: 20px;
   text-decoration: none;
   font-family: Tahoma;
-  margin-top: 10px;
-  margin-left: 8vh;
-  margin-right: 8vh;
-  text-align: center;
-  position: relative;
-  padding: 1px;
+  padding: .2em 1em;
 }
 
 #portfolio {
@@ -119,13 +126,4 @@ a {
 
 p {
   margin-top: -4px;
-}
-
-ul {
-  position: relative;
-  margin-left: 5vh;
-  list-style-type: none;
-  text-align: center;
-  text-align: center;
-  display: inline-block;
 }
