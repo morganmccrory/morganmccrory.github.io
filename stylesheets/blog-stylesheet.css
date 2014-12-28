@@ -41,7 +41,7 @@ body {
   margin-right: 8vh;
   text-align: center;
   position: relative;
-  display: inline;
+  display: inline-block;
   padding: 1px;
 }
 
@@ -124,15 +124,15 @@ p {
 
 .nav_list {
   list-style-type: none;
-  display: inline;
+  display: inline-block;
   text-align: center;
   position: relative;
 }
 
 ul {
-  position: absolute;
+  position: relative;
   margin-left: 5vh;
   list-style-type: none;
-  display: inline;
+  display: inline-block;
   text-align: center;
 }
