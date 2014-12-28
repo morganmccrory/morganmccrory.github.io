@@ -130,9 +130,9 @@ p {
 }
 
 ul {
-  position: relative;
+  position: absolute;
   margin-left: 5vh;
   list-style-type: none;
-  display: inline-block;
+  display: inline;
   text-align: center;
 }
