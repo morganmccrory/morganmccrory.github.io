@@ -21,7 +21,7 @@ body {
   position: absolute;
 }
 
-#navigation_bar {
+.navigation_bar {
   height: 50px;
   margin-right: -25px;
   margin-left: -40px;
@@ -31,19 +31,19 @@ body {
   background-color: #5d4a7d;
 }
 
-#navigation_bar ul {
-  margin: 0;
-  padding 0;
+.navigation_bar ul {
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
   text-align: center;
 }
 
-#navigation_bar ul li {
+.navigation_bar ul li {
   display: inline;
 
 }
 
-#navigation_bar ul li a {
+.navigation_bar ul li a {
   color: white;
   font-size: 20px;
   text-decoration: none;
