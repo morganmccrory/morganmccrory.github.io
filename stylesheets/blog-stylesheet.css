@@ -122,9 +122,14 @@ p {
   margin-top: -4px;
 }
 
-#navigation_bar ul {
+.nav_list {
   list-style-type: none;
   display: inline;
   text-align: center;
   position: relative;
+}
+
+ul {
+  position: relative;
+  margin-left: 5vh;
 }
