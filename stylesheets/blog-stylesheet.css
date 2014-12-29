@@ -161,10 +161,10 @@ p {
 
 .connect_pic1:hover {
   border: 2px solid #5C9356;
-  margin: -2px;
+  margin: -2px -2px -2px 63px;
 }
 
 .connect_pic:hover {
   border: 2px solid #5C9356;
-  margin: -2px -2px -2px 63px;
+  margin: -2px;
 }
