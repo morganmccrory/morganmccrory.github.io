@@ -141,7 +141,7 @@ p {
   width: 50px;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
+  position: absolute;
   display: inline;
   padding: 20px;
 }
