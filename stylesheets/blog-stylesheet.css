@@ -134,3 +134,14 @@ p {
   display: block;
   text-decoration: none;
 }
+
+.connect_pic {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+.connect a:hover {
+  border: 2px solid #5d4a7d;
+}
