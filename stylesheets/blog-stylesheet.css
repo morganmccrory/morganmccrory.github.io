@@ -138,6 +138,7 @@ p {
 .connect_pic {
   height: 50px;
   width: 50px;
+  margin-right: 100px;
   text-align: center;
   display: inline-block;
   padding: 15px;
@@ -145,4 +146,5 @@ p {
 
 .connect:hover {
   border: 2px solid #5d4a7d;
+  border-top: -50px;
 }
