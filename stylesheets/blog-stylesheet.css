@@ -89,14 +89,16 @@ h1 {
 h2 {
   color: #5C9356;
   text-align: left;
-  font-size: 18pt;
+  font-size: 16pt;
+  margin-left: 30px;
 }
 
 h3 {
-  font-size: 14pt;
+  font-size: 10pt;
   color: #4A3F40;
   text-align: left;
   margin-top: -18px;
+  margin-left: 30px;
   font-weight: normal;
 }
 
@@ -122,8 +124,8 @@ p {
 .small_pic {
  border: 1px solid #5d4a7d;
   height: 100px;
-  width: 100px;
-  margin-left: -30px;
+  width: 140px;
+  margin-left: -100px;
   float: left;
   display: block;
 }
