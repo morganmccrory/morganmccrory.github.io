@@ -90,7 +90,7 @@ h2 {
   color: #5C9356;
   text-decoration: none;
   font-size: 16pt;
-  margin-top: -5px;
+  margin-top: -1px;
 }
 
 h3 {
@@ -105,6 +105,10 @@ h3 {
   color: #5d4a7d;
   font-size: 10pt;
   font-family: Arial;
+}
+
+#home_links_to_posts {
+  text-decoration: none;
 }
 
 #changing_picture {
