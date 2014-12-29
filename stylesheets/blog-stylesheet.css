@@ -144,6 +144,8 @@ p {
   display: inline-block;
   padding: 20px;
   margin-left: 65px;
+  overflow: hidden;
+  border: none;
 }
 
 .connect_pic {
@@ -154,12 +156,12 @@ p {
   display: inline-block;
   padding: 20px;
   overflow: hidden;
-  float: left;
   border: none;
 }
 
 .connect_pic1:hover {
   border: 2px solid #5d4a7d;
+  margin: -2px;
 }
 
 .connect_pic:hover {
