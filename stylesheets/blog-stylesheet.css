@@ -108,8 +108,7 @@ p {
 .small_pic {
  border: 1px solid #5d4a7d;
   height: 100px;
-  width: auto;
-  margin-right: 25px;
-  margin-bottom: 15px;
+  width: 176px;
+  margin-left: -15px;
   float: left;
 }
