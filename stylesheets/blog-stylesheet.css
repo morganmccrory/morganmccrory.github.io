@@ -139,8 +139,8 @@ p {
 .connect_pic1 {
   height: 50px;
   width: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 1px;
+  margin-left: 1px;
   position: relative;
   display: inline-block;
   padding: 20px;
@@ -150,8 +150,8 @@ p {
 .connect_pic {
   height: 50px;
   width: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 1px;
+  margin-left: 1px;
   position: relative;
   display: inline-block;
   padding: 20px;
