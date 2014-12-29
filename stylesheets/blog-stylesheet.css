@@ -90,7 +90,7 @@ h2 {
   color: #5C9356;
   text-decoration: none;
   font-size: 16pt;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 h3 {
@@ -101,7 +101,7 @@ h3 {
   font-weight: normal;
 }
 
-a {
+#home_link {
   color: #5d4a7d;
   font-size: 10pt;
   font-family: Arial;
