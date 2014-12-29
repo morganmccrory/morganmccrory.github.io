@@ -121,9 +121,9 @@ p {
 .small_pic {
  border: 1px solid #5d4a7d;
   height: 70px;
-  width: 110px;
-  margin-left: -105px;
-  margin-right: 20px;
+  width: 100px;
+  margin-left: -85px;
+  margin-right: 10px;
   float: left;
   display: block;
 }
