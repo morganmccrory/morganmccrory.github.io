@@ -19,7 +19,7 @@ body {
   padding-top: 20px;
   padding-left: 30px;
   padding-right: 10px;
-  position: relative;
+  position: absolute;
 }
 
 .navigation_bar {
@@ -136,13 +136,24 @@ p {
   text-decoration: none;
 }
 
+.connect_pic1 {
+  height: 50px;
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 100px;
+}
+
 .connect_pic {
   height: 50px;
   width: 50px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
   display: inline-block;
-  position: absolute;
   padding: 20px;
 }
 
