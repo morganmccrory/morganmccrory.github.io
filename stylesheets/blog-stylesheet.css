@@ -154,6 +154,8 @@ p {
   display: inline-block;
   padding: 20px;
   overflow: hidden;
+  float: left;
+  border: none;
 }
 
 .connect_pic1:hover {
@@ -162,4 +164,5 @@ p {
 
 .connect_pic:hover {
   border: 2px solid #5d4a7d;
+  margin: -2px;
 }
