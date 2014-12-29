@@ -139,8 +139,9 @@ p {
 .connect_pic {
   height: 50px;
   width: 50px;
-  text-align: center;
-  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline;
   padding: 20px;
 }
 
