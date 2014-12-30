@@ -3,9 +3,12 @@ html {
 }
 
 h1 {
-  font-family: Lato;
-  font-size: 24pt;
+  font-family: Raleway;
+  font-size: 40pt;
   color: #00B20A;
+  font-weight: normal;
+  margin-left: 20%;
+  margin-top: 25%;
 }
 
 span {
