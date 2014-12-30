@@ -1,3 +1,13 @@
 html {
   background-color:#2B1B17;
 }
+
+h1 {
+  font-family: Lato;
+  font-size: 24pt;
+  color: #00B20A;
+}
+
+span {
+  color: #B20047;
+}
