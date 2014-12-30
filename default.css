@@ -3,12 +3,12 @@ html {
 }
 
 h1 {
-  font-family: "Avant Garde", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 60pt;
   color: #00B20A;
-  font-style: normal;
-  margin-left: 18%;
-  margin-top: 15%;
+  font-weight: normal;
+  margin-left: 15%;
+  margin-top: 10%;
 }
 
 span {
