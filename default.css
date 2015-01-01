@@ -19,11 +19,12 @@ h1 {
 
 #footer {
   color: #84FFE3;
-  font-size: 40pt;
+  font-size: 25pt;
   font-weight: lighter;
   font-family: Helvetica, sans-serif;
   position: relative;
-  height: 3em;
+  vertical-align: middle;
+  height: 2em;
   width: 100%;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
