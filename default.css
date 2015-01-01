@@ -23,7 +23,7 @@ h1 {
   font-weight: lighter;
   font-family: Helvetica, sans-serif;
   position: relative;
-  vertical-align: middle;
+  margin-top: 1em;
   height: 2em;
   width: 100%;
   border-top: 1px solid #d3d3d3;
