@@ -3,10 +3,10 @@ html {
 }
 
 h1 {
-  font-family: "Franklin Gothic", sans-serif;
+  font-family: Avenir, sans-serif;
   font-size: 60pt;
   color: #00B20A;
-  font-weight: 100;
+  font-weight: lighter;
   margin-left: 15%;
   margin-top: 10%;
 }
