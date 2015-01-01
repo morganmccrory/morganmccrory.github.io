@@ -29,3 +29,9 @@ h1 {
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
 }
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
