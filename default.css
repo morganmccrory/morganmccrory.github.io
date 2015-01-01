@@ -22,15 +22,11 @@ h1 {
   font-size: 25pt;
   font-weight: lighter;
   font-family: Helvetica, sans-serif;
-  position: fixed;
+  position: relative;
   text-align: center;
   vertical-align: middle;
   height: 2.5em;
   width: 100%;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
-}
-
-span {
-  vertical-align: middle;
 }
