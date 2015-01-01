@@ -22,7 +22,7 @@ h1 {
   font-size: 25pt;
   font-weight: lighter;
   font-family: Helvetica, sans-serif;
-  position: relative;
+  position: absolute;
   text-align: center;
   height: 2em;
   width: 100%;
