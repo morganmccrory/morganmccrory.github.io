@@ -3,14 +3,16 @@ html {
 }
 
 h1 {
-  font-family: Avenir, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 60pt;
   color: #00B20A;
-  font-weight: 200;
+  font-weight: lighter;
   margin-left: 15%;
   margin-top: 10%;
 }
 
 span {
   color: #B20047;
+  margin-top: -10px;
+  margin-left: 50px;
 }
