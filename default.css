@@ -25,6 +25,7 @@ h1 {
   position: relative;
   text-align: center;
   vertical-align: middle;
+  top: 50%;
   height: 2.5em;
   width: 100%;
   border-top: 1px solid #d3d3d3;
