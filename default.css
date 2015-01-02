@@ -42,7 +42,10 @@ h1 {
 }
 
 #linkedin:hover {
-  background-image: url(../imgs/linkedin_blue.png)
+  background-image: url(../imgs/linkedin_blue.png);
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 #connect {
