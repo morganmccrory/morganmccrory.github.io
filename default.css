@@ -41,12 +41,10 @@ h1 {
   right: .5em;
 }
 
-.linkedin {
+.linkedin{
   width: 48px;
   height: 48px;
   display: inline-block;
-  bottom: 40;
-  padding-left: 2em;
   background-image: url(../imgs/linkedin_main.png);
 }
 
