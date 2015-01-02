@@ -25,11 +25,11 @@ h1 {
   position: absolute;
   text-align: center;
   height: 2em;
-  width: 95%;
+  width: 98%;
   bottom: 0;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
-  padding-top: 1em;
+  padding-top: .5em;
 }
 
 #footer img {
