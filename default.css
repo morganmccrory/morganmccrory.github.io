@@ -23,17 +23,20 @@ h1 {
   font-weight: lighter;
   font-family: Helvetica, sans-serif;
   position: absolute;
+  text-align: center;
   height: 2em;
   width: 100%;
   bottom: 0;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
-  padding-top: .75em;
+  padding-top: 1em;
 }
 
 #footer img {
   display: inline-block;
-  text-align: center;
   padding-left: 1em;
-  padding-top: 1em;
+}
+
+span {
+  text-align: left;
 }
