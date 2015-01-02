@@ -29,7 +29,7 @@ h1 {
   bottom: 0;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
-  padding-top: 1em;
+  padding-top: 1.1em;
   display: inline-block;
 }
 
@@ -37,7 +37,7 @@ h1 {
   display: inline-block;
   position: relative;
   bottom: 40;
-  padding-left: 1em;
+  padding-left: 3em;
 }
 
 #connect {
