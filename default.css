@@ -1,5 +1,5 @@
 html {
-  background-color: #2B1B17;
+  background-color: #000000;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 }
 
 #footer {
-  color: #84FFE3;
+  color: #55ACEE;
   font-size: 25pt;
   font-weight: lighter;
   font-family: Helvetica, sans-serif;
@@ -39,6 +39,10 @@ h1 {
   bottom: 40;
   padding-left: 2em;
   right: .5em;
+}
+
+#linkedin:hover {
+  background-image: url(../imgs/linkedin_blue.png)
 }
 
 #connect {
