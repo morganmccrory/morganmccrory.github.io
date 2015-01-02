@@ -33,7 +33,7 @@ h1 {
   display: inline-block;
 }
 
-#footer img {
+#footer a {
   display: inline-block;
   position: relative;
   bottom: 40;
