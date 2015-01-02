@@ -23,7 +23,7 @@ h1 {
   font-weight: lighter;
   font-family: Helvetica, sans-serif;
   position: absolute;
-  text-align: center;
+  text-align: right;
   height: 2em;
   width: 98%;
   bottom: 0;
@@ -37,9 +37,10 @@ h1 {
   display: inline-block;
   position: relative;
   bottom: 40;
-  padding-left: 3em;
+  padding-left: 2em;
 }
 
 #connect {
   text-align: left;
+  padding-left: 3em;
 }
