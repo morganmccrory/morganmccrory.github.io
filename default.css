@@ -34,8 +34,8 @@ h1 {
 
 #footer img {
   display: inline-block;
+  position: relative;
   padding-left: 1em;
-  vertical-align: middle;
 }
 
 #connect {
