@@ -35,6 +35,7 @@ h1 {
 #footer img {
   display: inline-block;
   position: relative;
+  bottom: 1;
   padding-left: 1em;
 }
 
