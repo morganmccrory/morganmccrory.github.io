@@ -41,10 +41,15 @@ h1 {
   right: .5em;
 }
 
-#linkedin:hover {
-  background-image: url(../imgs/linkedin_blue.png);
+.linkedin {
   width: 48px;
   height: 48px;
+  display: inline-block;
+  background-image: url(../imgs/linkedin_main.png);
+}
+
+.linkedin:hover {
+  background-image: url(../imgs/linkedin_blue.png);
 }
 
 #connect {
