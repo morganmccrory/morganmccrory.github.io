@@ -33,7 +33,7 @@ h1 {
   display: inline-block;
 }
 
-#footer a {
+#footer img {
   display: inline-block;
   position: relative;
   bottom: 40;
@@ -45,6 +45,8 @@ h1 {
   width: 48px;
   height: 48px;
   display: inline-block;
+  bottom: 40;
+  padding-left: 2em;
   background-image: url(../imgs/linkedin_main.png);
 }
 
