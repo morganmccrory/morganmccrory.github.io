@@ -38,9 +38,10 @@ h1 {
   position: relative;
   bottom: 40;
   padding-left: 2em;
+  right: 1em;
 }
 
 #connect {
   text-align: left;
-  padding-left: 3em;
+  padding-left: 6em;
 }
