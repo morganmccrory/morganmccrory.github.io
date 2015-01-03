@@ -7,14 +7,17 @@ h1 {
   font-size: 20pt;
   color: #13CC6D;
   font-weight: lighter;
-  margin-left: 10%;
+  margin-left: 8%;
   margin-top: 2%;
 }
 
-#last_name {
-  color: #CC8C11;
-  margin-top: -20px;
-  margin-left: 70px;
+.menu {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #13CC6D;
+  margin-right: 8%;
+  margin-top: 2%;
 }
 
 #footer {
