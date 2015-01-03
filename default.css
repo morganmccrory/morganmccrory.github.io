@@ -6,6 +6,9 @@ h1 {
   font-family: Helvetica, sans-serif;
   font-size: 20pt;
   color: #13CC6D;
+  font-weight: lighter;
+  margin-left: 15%;
+  margin-top: 2%;
 }
 
 #last_name {
