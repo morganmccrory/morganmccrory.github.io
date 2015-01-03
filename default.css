@@ -33,19 +33,11 @@ h1 {
   display: inline-block;
 }
 
-#footer img {
-  display: inline-block;
-  position: relative;
-  bottom: 40;
-  padding-left: 2em;
-  right: .5em;
-}
-
 .linkedin {
   width: 48px;
   height: 48px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   bottom: 40;
   right: .5em;
   padding-left: 2em;
