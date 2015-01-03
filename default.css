@@ -28,8 +28,8 @@ h1 {
 }
 
 .back_image {
-  top: 50%;
-  right: 50%;
+  margin-right: 50%;
+  margin-top: 50%;
 }
 
 #footer {
