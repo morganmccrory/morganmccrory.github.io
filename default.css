@@ -11,7 +11,7 @@ h1 {
   margin-top: 2%;
 }
 
-.menu {
+.menu ul {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
   font-size: 14pt;
