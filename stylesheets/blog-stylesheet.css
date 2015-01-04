@@ -5,14 +5,14 @@ html {
 .background {
   margin-top: 30px;
   margin-right: 300px;
-  margin-left: 300px;
+  margin-left: 270px;
   margin-bottom: auto;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   min-width: 700px;
   background-color: white;
-  border: 1px solid #22571B;
+  border: 2px solid #d3d3d3;
   border-radius: 20px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -30,7 +30,7 @@ html {
   border-top: 2px dashed #d3d3d3;
   border-bottom: 2px dashed #d3d3d3;
   display: block;
-  background-color: #22571B;
+  background-color: #5d4a7d;
 }
 
 .navigation_bar ul {
