@@ -4,15 +4,15 @@ html {
 
 .background {
   margin-top: 30px;
-  margin-right: 300px;
-  margin-left: 300px;
+  margin-right: 250px;
+  margin-left: 250px;
   margin-bottom: auto;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   min-width: 650px;
   background-color: white;
-  border: 2px solid #22571B;
+  border: 1px solid #22571B;
   border-radius: 20px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
