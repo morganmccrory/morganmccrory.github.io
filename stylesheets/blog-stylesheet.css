@@ -30,7 +30,7 @@ html {
   border-top: 2px dashed #d3d3d3;
   border-bottom: 2px dashed #d3d3d3;
   display: block;
-  background-color: #5d4a7d;
+  background-color: #5C9356;
 }
 
 .navigation_bar ul {
@@ -89,7 +89,7 @@ h1 {
 }
 
 h2 {
-  color: #5C9356;
+  color: #5d4a7d;
   text-decoration: none;
   font-size: 16pt;
   margin-top: -1px;
@@ -127,7 +127,7 @@ p {
 }
 
 .small_pic {
-  border: 1px solid #5d4a7d;
+  border: 1px solid #5C9356;
   height: 70px;
   width: 100px;
   margin-left: -85px;
