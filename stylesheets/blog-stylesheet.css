@@ -14,7 +14,7 @@ html {
 
 .navigation_bar ul {
   padding-top: 3px;
-  padding-left: 75px;
+  padding-left: 50px;
   list-style-type: none;
 }
 
@@ -27,7 +27,11 @@ html {
   font-size: 17px;
   text-decoration: none;
   font-family: Tahoma;
-  padding: 4vh;
+  padding: 2vh;
+}
+
+.navigation_bar ul li a:hover {
+  color: #5C9356;
 }
 
 .main_right {
@@ -172,6 +176,10 @@ p {
   color: #5C9356;
   font-weight: bold;
   font-size: 20px;
+}
+
+#navbar_homelink:hover {
+  color: white;
 }
 
 span {
