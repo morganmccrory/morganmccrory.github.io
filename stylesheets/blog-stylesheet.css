@@ -45,6 +45,30 @@ html {
   background-image: url(../imgs/blog_twitter.png);
 }
 
+  .linkedin {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 10;
+  margin-right: 50px;
+  margin-top: -45px;
+  background-image: url(../imgs/blog_linkedin.png);
+}
+
+  .github {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 10;
+  margin-right: 100px;
+  margin-top: -45px;
+  background-image: url(../imgs/blog_github.png);
+}
+
 .main_right {
   font-family: Verdana;
   font-size: 11pt;
