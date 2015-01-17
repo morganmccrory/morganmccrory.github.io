@@ -90,9 +90,19 @@ html {
   font-family: Verdana;
   font-size: 10pt;
   border-right: 1px solid #d3d3d3;
-  border-left: 1px solid #d3d3d3;
-  width: 910px;
+  width: 585px;
+  float: left;
   padding-right: 20px;
+}
+
+.main_right {
+  font-family: Verdana;
+  font-size: 10pt;
+  padding-top: 65px;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 261px;
 }
 
 .ruby {
@@ -107,6 +117,17 @@ html {
   padding: 8px;
 }
 
+#left_image {
+  float: left;
+  margin-left: 30px;
+  width: 25%;
+}
+
+#left_image img {
+  width: 100%;
+  height: auto;
+}
+
 h4 {
   font-size: 10pt;
   color: #4A3F40;
@@ -116,7 +137,7 @@ h4 {
 }
 
 h1 {
-  color: #5d4a7d;
+  color: #5C9356;
   text-align: center;
   font-size: 18pt;
   font-weight: normal;
@@ -179,6 +200,48 @@ p a:visited {
   color: #5d4a7d;
 }
 
+#changing_picture {
+  border: 1px solid #5d4a7d;
+  height: 224px;
+  width: 300px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.connect_pic1 {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 65px;
+  overflow: hidden;
+  border: none;
+}
+
+.connect_pic {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+}
+
+.connect_pic1:hover {
+  border: 2px solid #5C9356;
+  margin: -2px -2px -2px 63px;
+}
+
+.connect_pic:hover {
+  border: 2px solid #5C9356;
+  margin: -2px;
+}
+
 #codeshewrote {
   margin-left: auto;
   margin-right: auto;
@@ -210,16 +273,66 @@ span {
   text-shadow: none;
 }
 
+.right_title {
+  color: #A0A0A0;
+  font-size: 10pt;
+  font-weight: bold;
+  }
+
+.right_heading {
+   margin-top: -65px;
+   margin-left: -20px;
+   margin-right: -20px;
+   margin-bottom: -15px;
+   border-top: 1px solid #d3d3d3;
+   border-bottom: 1px dashed #d3d3d3;
+   padding: 8px;
+}
+
+.right_heading_prev {
+   margin-top: 20px;
+   margin-left: -20px;
+   margin-right: -20px;
+   margin-bottom: 20px;
+   border-top: 1px solid #d3d3d3;
+   border-bottom: 1px dashed #d3d3d3;
+   padding: 8px;
+}
+
+.prev_posts ul li {
+  font-size: 10pt;
+  list-style: square;
+  color: #d3d3d3;
+  margin-left: -23px;
+  margin-bottom: 10px;
+}
+
+.prev_posts a {
+  text-decoration: none;
+  color: #5C9356;
+}
+
+.prev_posts a:hover{
+  text-decoration: none;
+  color: #5d4a7d;
+}
+
+.prev_posts a:visited{
+  text-decoration: none;
+  color: #5d4a7d;
+}
+
 .left_title {
     font-size: 10pt;
     color: #585858;
   }
 
 .left_heading {
+   margin-left: 20px;
    margin-right: -20px;
+   border-top: 1px solid #d3d3d3;
    border-bottom: 1px solid #d3d3d3;
    padding: 8px;
-   font-weight: bold;
 }
 
 .bottom {
