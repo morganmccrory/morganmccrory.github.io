@@ -337,23 +337,26 @@ span {
 
 .bottom {
   clear: both;
-  font-family: Verdana;
-  font-size: 10pt;
   margin-left: 300px;
   margin-right: 300px;
   border-top: 1px dashed #d3d3d3;
   border-right: 1px dashed #d3d3d3;
   border-left: 1px dashed #d3d3d3;
   padding-top: 10px;
-  color: #5C9356;
-  text-decoration: none;
   text-align: center;
 }
 
-.bottom:hover {
+.bottom a {
+  color: #5C9356;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 10pt;
+}
+
+.bottom a:hover {
   color: #5d4a7d;
 }
 
-.bottom:visited {
+.bottom a:visited {
   color: #5d4a7d;
 }
