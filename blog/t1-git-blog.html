@@ -1,39 +1,76 @@
-<!DOCTYPE html>
+<!DOCTYPE = HTML>
 <html>
 <head>
-<title>Morgan's DBC Blog</title>
+<title>Code She Wrote</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/blog-stylesheet.css">
+<style type="text/css"></style>
 </head>
+
 <body>
-  <div class="background">
-    <img src="http://morganmccrory.github.io/stylesheets/blog-logo.jpg">
+<div class="background">
+<div class="navigation_bar">
+  <ul>
+    <li><a href="http://codeshewrote.io" id="navbar_homelink"><span>code</span>shewrote.io</a></li>
+    <li><a href="http://morganmccrory.github.io">portfolio</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">about</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="http://www.twitter.com/morganmccrory" class="twitter"></a></li>
+    <li><a href="http://www.linkedin.com/in/morganmccrory" class="linkedin"></a></li>
+    <li><a href="http://www.github.com/morganmccrory" class="github"></a></li>
+  </ul>
+</div>
 <br>
 <br>
-  <div class="navigation_bar">
-    <ul>
-      <li><a href="http://morganmccrory.github.io/blog/index.html">HOME</a></li>
-      <li><a href="http://morganmccrory.github.io">PORTFOLIO</a></li>
-      <li><a href="http://morganmccrory.github.io/blog/contact.html">CONTACT</a></li>
-    </ul>
+<br>
+<div class="main">
+<img src="http://morganmccrory.github.io/stylesheets/codeshewrote5.jpg" id="codeshewrote"><br>
+<img src="https://morganmccrory.github.io/imgs/computer.jpg" id="picture_me"><br><br>
+  <div class="main_left">
+    <div class="left_heading">
+      <span class="left_title">December 21, 2014</span>
+    </div>
+      <h1>Version Control: Git and GitHub</h1>
+
+      <p><b>Version control</b> monitors the changes that you make to a file. It is a <b>safe-guard</b> against mistakes – and let’s be honest, we all make them. Have you ever written an email, sent it without properly proofreading, and then discovered your error only after it was sent? Or maybe you did proofread, but somehow one misspelling just slipped by you. That is where version control comes in!</p><br><br>
+
+      <p>It remembers every single change you make in a code, no matter how big or small. If you make an error without realizing it, and change a huge chunk of code in the meantime, do not fear! You still have a previous version readily available that you can cleanly work from. It really is a life-saver for developers.</p><br><br>
+
+      <p>Yet, it isn’t only limited to developers! No, no – just about anyone can use version control. An accountant can use it to keep track of financial transactions, and a writer can use it to keep track of versions of a story. Each commit could be another chapter, revisions to a previous chapter, or even changes to a character’s name. Fun fact: In the <b>Harry Potter</b> series, Hermione Granger’s original last name was <b>Puckle</b>, but J.K. Rowling felt that “the name did not suit her at all.” Version control might have made this important revision much easier.</p><br><br>
+
+      <p>There are lots of different version control systems to use, but the most popular ones for developers are <b>Subversion</b> (SVN) and <b>Git</b>. They each have their own strengths and weaknesses, but I am partial to using Git, so that is the one that we will talk about here.</p>
+
+      <h3>I Don’t “Git” It</h3>
+
+      <p>Git, which is a type of version control, tracks your changes by keeping track of all of your "commits." A commit is the your official <b>commitment</b> to making a change. It is a "snapshot" of your code that you can reference at any time. Usually, commits are pushed after every small change. That way, instead of sending in many updates at once, only a small update is sent. Git monitors all of these commits so you can see the process that you went through to create the final version of a program. There is a popular phrase used in the git community: <b>Commit early, commit often!</b> It won’t hurt anything to have a long list of commits. However, if you change too much at once, you might not be able to go back to the version that you wanted and this will result in lots of wasted time. There are some standard practices to use when writing commit messages, and you can read more about them <a href=" http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">here</a></p>.
+
+      <h3>Let’s Work Together</h3>
+
+      <p>It seems obvious at this point that version control is extremely beneficial for keeping track of your own files, but you may not have even considered how important is it when working on the same files with other collaborators. <b>Back in my day</b>, when working on a group paper in school, we would have to email the paper back and forth, each one emailing the new version as they made edits. <b>Now</b>, we can all work on the same files at the same time. And if I don’t like an edit that you pushed through? That’s OK! We still have each of the previous versions saved.</p><br><br>
+
+      <p>Working on the same file at the same time is made possible by a process called <b>merging</b>. Merging takes commits by two or more people and combines them into a brand new file. You can work on the beginning of a paper while I work on the ending and we won’t overwrite each other! Pretty neat!</p><br><br>
+
+      <p>Git lets you create and work on what is called <b>”branches”</b>. Essentially, branches are different versions of the same thing that you can switch back and forth out of interchangeably. For example, let’s pretend that you have five different versions of yourself. You have one version of you that is a sports star, another that is a football player, one that is a janitor, one that is an astronaut, and a last one that is a programmer. They’re all you – but just with slight modifications. Now you get to see how each one looks and then you can say, “You know what, programming is awesome and I want to keep the one where I am a programmer!” Then you can throw the other versions of yourself away and only keep that one. That is how branches work – you can see how they all look, but then decide which version you like better and “keep” that one.</p>
+
+      <h3>GitHub</h3>
+
+      <p><a href="http://github.com">GitHub</a> is used to store code – it lives on the internet. This is the website (ie. <b>hub</b>) that programmers can go to in order to share their code with other programmers and collaborate together online. Again, going back to emailing a school paper back and forth to your group partners, this takes away that step and let’s everyone contribute to one master version <b>at the same time</b>.</p><br><br>
+
+      <p>In order to use GitHub, you have to <b>”push”</b> your changes to GitHub. They don’t just appear automatically if you’re working locally with Git. After installing git, and going through some initial processes to link up your GitHub account and your computer, actually changing files on GitHub is fairly simple! From your terminal, type:</p>
+
+      <div class="ruby">git add /put/file/name/here<br>
+      git commit –m “Add commit message here”<br>
+      git push</div><br><br>
+
+      <p>And voila! Your changes have now been pushed to Github. What you do locally on your computer doesn’t automatically appear online – you need to explicitly send them there. I hope this has been a beneficial introduction!</p><br><br>
+
+      <p class="sign_off">If you have any questions or comments, please send me either an <a href="mailto:morgan@codeshewrote.io">email</a> or a <a href="http://www.twitter.com/morganmccrory">tweet</a>. Happy coding!<br><br>Posted by Morgan McCrory</p>
+<br>
+<br>
   </div>
- <div class="main_right">
-<br>
-<h1>Git and GitHub</h1>
-<h4>by Morgan McCrory | Wednesday, December 17, 2014</h4>
-<br>
-<img src="http://morganmccrory.github.io/imgs/computer.jpg" id="changing_picture">
-<p>
-Hi everyone! This is my first official blog post on GitHub. I also have another blog on Tumblr, please check it out if you get a chance: <a href="http://codeshewrote.tumblr.com">Code She Wrote</a>. And, as always, <a href="http://www.twitter.com/morganmccrory">follow me</a> on Twitter!<br><br>
-On to the actual challenge! Version control is a safe-guard against mistakes, and to keep track of your thought process while creating code. I will admit, I am guilty of making foolish mistakes in school on papers that I was supposed to write. I wouldn’t realize that I had made a mistake, save the paper, and then open it up again later only to realize that I had deleted the entire third page. Oops! My English paper, however, was probably easier to re-write than an entire page of code would be. Using version control protects developers from making these types of mistakes.<br><br>
-Git tracks changes by keeping track of all of your "commits." A commit is the your official commitment to making a change. It is a "snapshot" of your code that you can reference at any time. It saves a small change that you made so instead of sending in many updates at once, only a small update is sent. Git, and specifically GitHub, keep track of all of these so you can see the process that you went through to create the final version of a program.<br><br>
-GitHub is extremely beneficial to store code. It allows other programmers to see your work and either comment or make changes themselves. You can also use GitHub to store group projects so that everyone can contribute to the project at the same time and all of the changes are merged together in one master file.<br><br>
-Thank you for checking out my blog!
-</p>
-<a href="http://morganmccrory.github.io/blog/index.html" id="home_link"> << back to Home</a>
-<br>
-<br>
-</div>
-</div>
-</body>
+  </div>
+  <div class="bottom"><i>There are no previous posts!</i></div></div>
+  </body>
 </html>
