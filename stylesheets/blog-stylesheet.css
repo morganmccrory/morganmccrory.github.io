@@ -173,6 +173,11 @@ h3 {
   margin
 }
 
+.sign_off {
+  font-style: italic;
+  text-align: center;
+}
+
 p {
   margin-top: -20px;
   padding-left: 25px;
@@ -195,9 +200,13 @@ p a:visited {
   color: #5d4a7d;
 }
 
-.sign_off a {
-  color: #5C9356;
-  text-decoration: none;
+#changing_picture {
+  border: 1px solid #5d4a7d;
+  height: 224px;
+  width: 300px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  float: left;
 }
 
 .connect_pic1 {
@@ -257,6 +266,11 @@ p a:visited {
 
 #navbar_homelink:hover {
   color: white;
+}
+
+span {
+  color: black;
+  text-shadow: none;
 }
 
 .right_title {
