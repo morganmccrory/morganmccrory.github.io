@@ -1,39 +1,87 @@
-<!DOCTYPE html>
+<!DOCTYPE = HTML>
 <html>
 <head>
-  <title>Morgan's DBC Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/blog-stylesheet.css">
+<title>Code She Wrote</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/blog-stylesheet.css">
+<style type="text/css"></style>
 </head>
+
 <body>
-  <div class="background">
-    <img src="http://morganmccrory.github.io/stylesheets/blog-logo.jpg">
+<div class="background">
+<div class="navigation_bar">
+  <ul>
+    <li><a href="http://codeshewrote.io" id="navbar_homelink"><span>code</span>shewrote.io</a></li>
+    <li><a href="http://morganmccrory.github.io">portfolio</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">about</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="http://www.twitter.com/morganmccrory" class="twitter"></a></li>
+    <li><a href="http://www.linkedin.com/in/morganmccrory" class="linkedin"></a></li>
+    <li><a href="http://www.github.com/morganmccrory" class="github"></a></li>
+  </ul>
+</div>
 <br>
 <br>
-  <div class="navigation_bar">
-    <ul>
-      <li><a href="http://morganmccrory.github.io/blog/index.html">HOME</a></li>
-      <li><a href="http://morganmccrory.github.io">PORTFOLIO</a></li>
-      <li><a href="http://morganmccrory.github.io/blog/contact.html">CONTACT</a></li>
-    </ul>
+<br>
+<div class="main">
+<img src="http://morganmccrory.github.io/stylesheets/codeshewrote5.jpg" id="codeshewrote"><br>
+<img src="https://morganmccrory.github.io/imgs/computer.jpg" id="picture_me"><br><br>
+  <div class="main_left">
+    <div class="left_heading">
+      <span class="left_title">January 6, 2015</span>
+    </div>
+      <h1>CSS Design: Margin, Borders, and Padding</h1>
+
+      <img src="http://morganmccrory.github.com/imgs/boxmodel.png"><br>
+
+      <p>Let’s talk about the CSS design elements of <b>margins</b>, <b>borders</b>, and <b>padding</b>. These three elements control positioning in an HTML document. They allow for incredibly fine control over how our web page looks – down to the pixel. They do this by formatting the web page in what is called the <b>CSS box model</b>. Each HTML element acts like a box that holds the pictures and text that we code. This should make sense because even if we don’t format your HTML in any way, your text and pictures will still look like a box because of our web browser. It just won’t be very pretty!</p><br><br>
+
+      <p>The margin is the outermost element from our box. The larger the margin, the more space between our box and the boxes around it. We can adjust the margin to move our boxes (or elements) closer to or father away from each other. The syntax for margins is quite simple:</p>
+
+          <div class="ruby">&lt;margin: 15px;&gt;</div><br><br>
+
+      <p>This creates a margin of 15 pixels on all four sides of our element. We can specify a margin to be on only one side of your element:</p>
+
+          <div class="ruby">&lt;margin-left: 20px;&gt;</div><br><br>
+
+      <p>You can also set all of an element’s margins at once. Simply start with the top margin and go around clockwise, setting each side as you go. Here is what is should look like:</p>
+
+          <div class="ruby">&lt;margin: 1px 2px 3px 4px;&gt;</div><br><br>
+
+      <p>This will set a top margin of 1 pixel, right of 2 pixels, bottom of 3 pixels, and left margin of 4 pixels. We can also use different measurements instead of pixels. Let’s move our margin 10% from the right.</p>
+
+          <div class="ruby">&lt;margin-right: 10%;&gt;</div><br><br>
+
+      <p>Can you guess what would happen if we moved the margin -10px in a certain direction? The element would move the <b>opposite</b> direction!</p>
+
+      <p>The border is also exactly what it sounds like - the edge of our box. The border is invisible by default, but by setting the <b>border property</b>, we can make it visible. The syntax used to make the border visible is:</p>
+
+          <div class="ruby">&lt;border: 1px solid #d3d3d3;&gt;</div><br><br>
+
+      <p>Can you guess what each part means? The border is 1 pixel wide, solid, and #d3d3d3 is the color code. (In this case, the color is gray. We can use either the name of a color or the color code if we would like to be more specific.) We can also make the border solid or dashed. And, just like with the margin, we can specify a border to be on only one side of our element.</p><br><br>
+
+      <p>Finally, we have the padding element. The padding is the space between the border and any other content that we want to include in your box. We adjust the padding to make the border either closer to or farther away from the other content. Pretty nifty! The syntax to adjust padding is:</p>
+
+      <div class="ruby">&lt;padding: 10px&gt;</div><br><br>
+
+      <p>Just like with the margin and border, we can specify the padding to only be on one side of our element.</p>
+
+      <h3>Putting It All Together</h3>
+
+      <p>So what if we adjust the margin using pixels to center a box on a 13” screen and it looks good to us, but then someone else views our web page on a 15” screen and it is off-center for them? You guessed it – there is a solution! To center a box, you will simply input:</p>
+
+      <div class="ruby">&lt;margin-right: auto;&gt;<br>
+      &lt;margin-left: auto;&gt;</div><br><br>
+
+      <p>This centers the box no matter what screen size someone is viewing it on. I hope you learned a little in this introduction to CSS Design elements! Please check back soon!</p><br><br>
+
+      <p class="sign_off">If you have any questions or comments, please send me either an <a href="mailto:morgan@codeshewrote.io">email</a> or a <a href="http://www.twitter.com/morganmccrory">tweet</a>. Happy coding!<br><br>Posted by Morgan McCrory</p>
+<br>
+<br>
   </div>
-  <div class="main_right">
-    <br>
-    <h1>CSS Design</h1>
-    <h4>by Morgan McCrory | Saturday, January 3, 2015</h4>
-    <br>
-    <img src="http://morganmccrory.github.io/imgs/boxmodel.png" id="changing_picture">
-    <p>
-      Today I am going to talk about the CSS design elements of Margins, Borders, and Padding. Most web pages are made up of boxes that contain each of these elements. For example, the white space around this blog post is a box placed on top of the grey diagonal line background image. I positioned this white box by using all 3 design elements.<br><br>
-      The Margin is the outermost element from your actual box. If I type in 'margin-left: 15px' then the beginning of my white box will start 15 pixels away from the left side of my screen. I can do this on all 4 sides of the box. But you don't have to use pixels! You can also adjust margins using percentages or other units of measurement depending on your preferences. It is very similar to determining margings in a Word document. In Word, a margin is the white space between the edge of the page and your content. It is the same with CSS.<br><br>
-      The Border is also exactly what it sounds like - the edge of your box. You can choose to have a border or not have one, depending on what you want to do with your webpage. You can also make the border as big or little as you would like. The input for this border on this page is: 'border: 2px solid #d3d3d3;' Can you guess what each part means? The border is 2 pixels wide, solid, and #d3d3d3 is the color code. You can use either the names of a color, or the color code if you would like to be more specific. You can have a dashed or solid border as well. Can you guess what kind of border I used around the navigation menu at the top of the page?<br><br>
-      Finally, we have the Padding element. The padding is the space between the border and any other content that you want to include in your box. As you have probably figured out, I used Padding on this webpage to put some space in between the border and the text that you are reading right now! You can adjust the size of all 4 sides individually to customize the padding any way that you want to.<br><br>
-      I hope you learned a little in this introduction to CSS Design elements. Please send me any email if you have any questions!
-    </p>
-    <a href="http://morganmccrory.github.io/blog/index.html" id="home_link"> << back to Home</a>
-<br>
-<br>
-</div>
-</div>
-</body>
+  </div>
+  <div class="bottom"><a href="http://morganmccrory.github.com/blog/t2-css-design.html"> &#8592; Previous Post</a></div></div>
+  </body>
 </html>
