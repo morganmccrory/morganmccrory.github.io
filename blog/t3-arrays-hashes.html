@@ -37,19 +37,19 @@
       <p>You can use an <b>array</b> to store a list inside a single variable. The list can be of anything – numbers, strings, symbols, etc. They don’t have to be in any order, but each element in the array is assigned a number. This is called the <b>index</b>. What is interesting is that instead of beginning with "1", <b>the first object in an array is actually "0"</b>. From there, the index goes in ascending order to 1, then 2, then 3, etc. This can take some getting used to! We can access each element of the array through the index number:</p>
 
       <div class="ruby">
-      array = [3, 8, 19, 42, 7, 35]
+      array = [3, 8, 19, 42, 7, 35]<br>
       array[3] <font color="#d3d3d3"># returns a value of 42</font></div><br><br>
 
       <p>The example above shows how the index works for our array. The index numbers for each of the elements are: 3 has an index of 0, 8 has an index of 1, 19 has an index of 2, etc. This is called <b>access by index</b>. We can access the “n”th element of an array by putting the index number in square brackets (as seen above). What if we switched the order around?</p>
 
       <div class="ruby">
-      array = [19, 7, 42, 35, 3, 8]
+      array = [19, 7, 42, 35, 3, 8]<br>
       array[3] <font color="#d3d3d3"># returns a value of 35</font></div><br><br>
 
       <p>While order does not really matter in an array, it does matter when assigning index numbers to each element. Because the order of the array changed, the value of index 3 changed. Now, what if we call an index that doesn’t exist?</p>
 
       <div class="ruby">
-      array = [19, 7, 42, 35, 3, 8]
+      array = [19, 7, 42, 35, 3, 8]<br>
       array[7] <font color="#d3d3d3"># returns nil</font></div><br><br>
 
       <p>Nothing gets returned because index 7 does not exist! As I mentioned earlier, arrays don’t have to be just numbers. They can be strings, boolean values, or (almost) anything!</p>
@@ -66,10 +66,10 @@
       <p>Very similar to JavaScript objects or Python dictionaries, a hash is a collection of <b>key-value pairs</b>. A hash is written like this:</p>
 
       <div class="ruby">
-      hash = {
-        “dog” => “Old Yeller”,
-        “cat” => “Garfield”,
-        “owl” => “Hedwig”
+      hash = {<br>
+      &nbsp; “dog” => “Old Yeller”,<br>
+      &nbsp; “cat” => “Garfield”,<br>
+      &nbsp; “owl” => “Hedwig”<br>
       }</div><br><br>
 
       <p>In this example, the animal types (dog, cat, owl) are the keys and the names (Old Yeller, Garfield, Hedwig) are the values, respectively. Creating a hash this way, by giving it a name and setting it equal to key => value pairs, is called <b>literal notation</b>. But you can also create an (empty) hash by entering: hash_name = Hash.new</p>
@@ -77,12 +77,12 @@
       <p>Much like with arrays, we can call on a value of a hash by typing this:</p>
 
       <div class="ruby">
-      hash[“dog”] # returns “Old Yeller”</div><br><br>
+      hash[“dog”] <font color="#d3d3d3"># returns “Old Yeller”</font></div><br><br>
 
       <p>If we used literal notation to create the hash, then we can add to it directly. However, if we used Hash.new to create the hash, then we can add to it like this:</p>
 
       <div class="ruby">
-      nfl = Hash.new
+      nfl = Hash.new<br>
       nfl[“Bears”] = “Chicago”</div><br><br>
 
       <p>And voila! We have now added the “Bears” key and “Chicago” value to the nfl hash.</p>
@@ -97,12 +97,12 @@
       <p>So what can we use symbols for? Incidentally, they make great keys for those hashes that we just learned about! One of the biggest benefits is that hash lookup is faster with symbol keys than with string keys. As of Ruby 1.9, the syntax for symbols changed, as did the method for using them within hashes. The most current version if using symbols as keys, would be like this:</p>
 
       <div class="ruby">
-      my_hash = {
-        one: 1,
-        two: 2,
-        three: 3,
-        four: 4
-      }
+      my_hash = {<br>
+      &nbsp; one: 1,<br>
+      &nbsp; two: 2,<br>
+      &nbsp; three: 3,<br>
+      &nbsp; four: 4<br>
+      }</div><br><br>
 
       <p>The colon now goes at the <b>end</b> of the symbol, and the hash rocket (=>) is no longer needed! It looks much cleaner this way, don’t you think? I hope this was a helpful guide about arrays, hashes, and symbols!</p>
 
