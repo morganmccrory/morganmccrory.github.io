@@ -195,25 +195,6 @@ p a:visited {
   color: #5d4a7d;
 }
 
-#home_link {
-  color: #5d4a7d;
-  font-size: 10pt;
-  font-family: Arial;
-}
-
-#home_links_to_posts {
-  text-decoration: none;
-}
-
-#changing_picture {
-  border: 1px solid #5d4a7d;
-  height: 224px;
-  width: 300px;
-  margin-right: 25px;
-  margin-bottom: 15px;
-  float: left;
-}
-
 .connect_pic1 {
   height: 50px;
   width: 50px;
@@ -272,18 +253,6 @@ p a:visited {
 #navbar_homelink:hover {
   color: white;
 }
-
-span {
-  color: black;
-  text-shadow: none;
-}
-
-.by_line {
-  font-size: 18pt;
-  color: #5C9356;
-  font-weight: normal;
-  margin-top: -12px;
-  }
 
 .right_title {
   color: #A0A0A0;
