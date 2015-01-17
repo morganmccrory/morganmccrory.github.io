@@ -195,6 +195,11 @@ p a:visited {
   color: #5d4a7d;
 }
 
+.sign_off a {
+  color: #5C9356;
+  text-decoration: none;
+}
+
 .connect_pic1 {
   height: 50px;
   width: 50px;
