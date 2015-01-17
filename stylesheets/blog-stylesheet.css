@@ -106,9 +106,12 @@ html {
 }
 
 .ruby {
-  background-color: #d3d3d3;
+  background-color: #404040;
   color: white;
   font-family: Times;
+  font-size: 11pt;
+  margin-left: 30px;
+  margin-right: 15px;
 }
 
 #left_image {
@@ -135,6 +138,7 @@ h1 {
   text-align: center;
   font-size: 18pt;
   font-weight: normal;
+  margin-bottom: 35px;
 }
 
 h2 {
@@ -158,6 +162,21 @@ p {
   margin-top: -20px;
   padding-left: 25px;
   padding-right: 10px;
+  color: black;
+  font-family: Verdana;
+  font-size: 10pt;
+}
+
+p a {
+  color: #5C9356;
+}
+
+p a:hover {
+  color: #5d4a7d;
+}
+
+p a:visited {
+  color: #5d4a7d;
 }
 
 #home_link {
