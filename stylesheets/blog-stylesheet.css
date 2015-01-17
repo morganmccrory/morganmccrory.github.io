@@ -89,8 +89,6 @@ html {
 .main_left {
   font-family: Verdana;
   font-size: 10pt;
-  border-right: 1px solid #d3d3d3;
-  border-left: 1px solid #d3d3d3;
   width: 910px;
   padding-right: 20px;
 }
