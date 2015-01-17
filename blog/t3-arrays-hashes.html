@@ -1,38 +1,116 @@
-<!DOCTYPE html>
+<!DOCTYPE = HTML>
 <html>
 <head>
-  <title>Morgan's DBC Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/old-blog-stylesheet.css">
+<title>Code She Wrote</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/blog-stylesheet.css">
+<style type="text/css"></style>
 </head>
+
 <body>
-  <div class="background">
-    <img src="http://morganmccrory.github.io/stylesheets/blog-logo.jpg">
+<div class="background">
+<div class="navigation_bar">
+  <ul>
+    <li><a href="http://codeshewrote.io" id="navbar_homelink"><span>code</span>shewrote.io</a></li>
+    <li><a href="http://morganmccrory.github.io">portfolio</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">about</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="http://www.twitter.com/morganmccrory" class="twitter"></a></li>
+    <li><a href="http://www.linkedin.com/in/morganmccrory" class="linkedin"></a></li>
+    <li><a href="http://www.github.com/morganmccrory" class="github"></a></li>
+  </ul>
+</div>
 <br>
 <br>
-  <div class="navigation_bar">
-    <ul>
-      <li><a href="http://morganmccrory.github.io/blog/index.html">HOME</a></li>
-      <li><a href="http://morganmccrory.github.io">PORTFOLIO</a></li>
-      <li><a href="http://morganmccrory.github.io/blog/contact.html">CONTACT</a></li>
-    </ul>
+<br>
+<div class="main">
+<img src="http://morganmccrory.github.io/stylesheets/codeshewrote5.jpg" id="codeshewrote"><br>
+<img src="https://morganmccrory.github.io/imgs/computer.jpg" id="picture_me"><br><br>
+  <div class="main_left">
+    <div class="left_heading">
+      <span class="left_title">January 13, 2015</span>
+    </div>
+      <h1>Ruby: Introduction to Arrays and Hashes</h1>
+
+      <p>You can use an <b>array</b> to store a list inside a single variable. The list can be of anything – numbers, strings, symbols, etc. They don’t have to be in any order, but each element in the array is assigned a number. This is called the <b>index</b>. What is interesting is that instead of beginning with "1", <b>the first object in an array is actually "0"</b>. From there, the index goes in ascending order to 1, then 2, then 3, etc. This can take some getting used to! We can access each element of the array through the index number:</p>
+
+      <div class="ruby">
+      array = [3, 8, 19, 42, 7, 35]
+      array[3] <font color="#d3d3d3"># returns a value of 42</font></div><br><br>
+
+      <p>The example above shows how the index works for our array. The index numbers for each of the elements are: 3 has an index of 0, 8 has an index of 1, 19 has an index of 2, etc. This is called <b>access by index</b>. We can access the “n”th element of an array by putting the index number in square brackets (as seen above). What if we switched the order around?</p>
+
+      <div class="ruby">
+      array = [19, 7, 42, 35, 3, 8]
+      array[3] <font color="#d3d3d3"># returns a value of 35</font></div><br><br>
+
+      <p>While order does not really matter in an array, it does matter when assigning index numbers to each element. Because the order of the array changed, the value of index 3 changed. Now, what if we call an index that doesn’t exist?</p>
+
+      <div class="ruby">
+      array = [19, 7, 42, 35, 3, 8]
+      array[7] <font color="#d3d3d3"># returns nil</font></div><br><br>
+
+      <p>Nothing gets returned because index 7 does not exist! As I mentioned earlier, arrays don’t have to be just numbers. They can be strings, boolean values, or (almost) anything!</p>
+
+      <div class="ruby">
+      array_of_strings = [“Ruby”, ”is”, “my”, “favorite”, “language!”]</div><br><br>
+
+      <p>We can also create a <b>multidimensional</b> array. This is simply an array of arrays. It has this name because when you add arrays as elements to another (main) array, it expands the shape of the main array to look more like a box. Yes, programmers like to keep naming conventions fairly simply!</p>
+
+      <h3>Introduction to Hashes</h3>
+
+      <p>OK, so we just talked about arrays and the index. But what if we want to create our own index and have it be something other than numbers? An array has the potential to be very long, and it would be very difficult to remember the element that is at index 227. Ruby has a solution! That is where <b>hashes</b> come in.</p>
+
+      <p>Very similar to JavaScript objects or Python dictionaries, a hash is a collection of <b>key-value pairs</b>. A hash is written like this:</p>
+
+      <div class="ruby">
+      hash = {
+        “dog” => “Old Yeller”,
+        “cat” => “Garfield”,
+        “owl” => “Hedwig”
+      }</div><br><br>
+
+      <p>In this example, the animal types (dog, cat, owl) are the keys and the names (Old Yeller, Garfield, Hedwig) are the values, respectively. Creating a hash this way, by giving it a name and setting it equal to key => value pairs, is called <b>literal notation</b>. But you can also create an (empty) hash by entering: hash_name = Hash.new</p>
+
+      <p>Much like with arrays, we can call on a value of a hash by typing this:</p>
+
+      <div class="ruby">
+      hash[“dog”] # returns “Old Yeller”</div><br><br>
+
+      <p>If we used literal notation to create the hash, then we can add to it directly. However, if we used Hash.new to create the hash, then we can add to it like this:</p>
+
+      <div class="ruby">
+      nfl = Hash.new
+      nfl[“Bears”] = “Chicago”</div><br><br>
+
+      <p>And voila! We have now added the “Bears” key and “Chicago” value to the nfl hash.</p>
+
+      <h3>It’s A Symbol</h3>
+
+      <p>But the fun doesn’t stop here! I want to take a moment to address the slightly more advance topic of <b>symbols</b>. A symbol is another type of Ruby object. They are <b>not</b> strings! There can only be one copy of a symbol at any given time and symbols cannot be changed. The syntax looks like this:</p>
+
+      <div class="ruby">
+      :symbol</div><br><br>
+
+      <p>So what can we use symbols for? Incidentally, they make great keys for those hashes that we just learned about! One of the biggest benefits is that hash lookup is faster with symbol keys than with string keys. As of Ruby 1.9, the syntax for symbols changed, as did the method for using them within hashes. The most current version if using symbols as keys, would be like this:</p>
+
+      <div class="ruby">
+      my_hash = {
+        one: 1,
+        two: 2,
+        three: 3,
+        four: 4
+      }
+
+      <p>The colon now goes at the <b>end</b> of the symbol, and the hash rocket (=>) is no longer needed! It looks much cleaner this way, don’t you think? I hope this was a helpful guide about arrays, hashes, and symbols!</p>
+
+      <p class="sign_off">If you have any questions or comments, please send me either an <a href="mailto:morgan@codeshewrote.io">email</a> or a <a href="http://www.twitter.com/morganmccrory">tweet</a>. Happy coding!<br><br>Posted by Morgan McCrory</p>
+<br>
+<br>
   </div>
-  <div class="main_right">
-    <br>
-    <h1>Arrays and Hashes</h1>
-    <h4>by Morgan McCrory | Sunday, January 11</h4>
-    <br>
-    <img src="URL goes here" id="changing_picture">
-    <p>
-      Arrays and hashes are good to use in Ruby. Arrays are essentially justs lists on your computer. Each slot acts like a variable and they are assigned my numbers. What is interesting is that instead of begining with "1", the first object in an array is actually "0". This will take some getting used to! However, arrays are useful for a lot of things - one of which could be a list of names. Instead of typing "Names1 = Morgan Names 2 = Tyler" you can do it all in one list: "Names = [Morgan, Tyler]". This makes Arrays an extremely useful tool to use in Ruby!<br><br>
-      Hashes are very similar to Arrays, except for the fact that instead of using numbers (0, 1, 2, 3, etc.) as keys, you can actually create the keys yourself. An example of the syntax for a hash would be: hash { first_name => Morgan, last_name => McCrory}. And then I can call the specific value paired with the key by simply typing: "hash[first_name]". Pretty cool, right? <br><br>
-      What is also interesting about arrays and hashes is that there are special methods that you can call on both of them. One of my favorites to call on an array is .each. This creates a key that is the same for all of the objects stored within the array, and then performs the action on each one of them. This is very useful for a lot of programs, as you can probably tell!<br><br>
-      I hope to update this more tomorrow but thank you for checking out my blog! Hope you have a great day!
-    </p>
-    <a href="http://morganmccrory.github.io/blog/index.html" id="home_link"> << back to Home</a>
-<br>
-<br>
-</div>
-</div>
-</body>
+  </div>
+  <div class="bottom"><a href="http://morganmccrory.github.com/blog/c2-thinking-styles.html"> &#8592; Previous Post</a></div></div>
+  </body>
 </html>
