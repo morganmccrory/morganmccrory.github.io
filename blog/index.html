@@ -30,22 +30,79 @@
 <img src="https://morganmccrory.github.io/imgs/computer.jpg" id="picture_me"><br><br>
   <div class="main_left">
     <div class="left_heading">
-      <span class="left_title">January 5, 2015</span>
+      <span class="left_title">January 16, 2015</span>
     </div>
       <a href="http://morganmccrory.github.io/blog/t2-css-design.html" id="home_links_to_posts">
-      <h1>CSS Design: Margins, Borders, and Padding</h1></a><br>
-      <p>Today I am going to talk about the CSS design elements of <b>Margins</b>, <b>Borders</b>, and <b>Padding</b>. Most web pages are made up of boxes that contain each of these elements. For example, the white space around this blog post is a <b>box</b> placed on top of the grey diagonal line background image. I positioned this white box by using all 3 design elements.</p>
-      <br>
-      <h3>Margins</h3>
-   <p>The Margin is the outermost element from your actual box. If I type in " <b>margin-left: 15px</b>" then the beginning of my white box will start 15 pixels away from the left side of my screen. I can do this on all 4 sides of the box. <b>But you don't have to use pixels!</b> You can also adjust margins using percentages or other units of measurement depending on your preferences. It is very similar to determining margins in a Word document. In Word, a margin is the white space between the edge of the page and your content. It is the same with CSS.</p>
-<br>
-   <h3>Borders</h3>
-   <p>The Border is also exactly what it sounds like - the <b>edge</b> of your box. You can choose to have a border or not have one, depending on what you want to do with your webpage. You can also make the border as big or little as you would like. The input for this border on this page is: "<b>border: 2px solid #d3d3d3;</b>" Can you guess what each part means? The border is 2 pixels wide, solid, and #d3d3d3 is the color code. You can use either the names of a color, or the color code if you would like to be more specific. You can have a dashed or solid border as well. Can you guess what kind of border I used around the navigation menu at the top of the page?</p>
-<br>
-   <h3>Padding</h3>
-    <p>Finally, we have the Padding element. The padding is the space between the border and any other content that you want to include in your box. As you have probably figured out, I used Padding on this webpage to put some space in between the border and the text that you are reading right now! You can adjust the size of all 4 sides individually to customize the padding any way that you want to.
-<br><br>
-    I hope you learned a little in this introduction to CSS Design elements. Please send me any email if you have any questions!</p>
+      <h1>What is the Enumerable Module?</h1>
+      <p>The <b>Enumerable Module</b>, is a module that you can <b>mix in</b>. OK, let’s stop right there. Have I already lost you? Let’s trying breaking it down into smaller components.<br><br>
+
+      First of all, what is a module? A <b>module</b> is a toolbox that contains set methods and constants. There are so many Ruby tools in the toolbox that you will want to use, but if Ruby loaded them all  every single time it ran, then it would become cluttered. Besides, even though you will want to use each tool, you will be using them at different times. Therefore, we keep them in modules and only pull out the module toolboxes when we need to use something stored inside of it!<br><br>
+
+      That makes sense. So what is a mixin? That is when you mix together the behaviors of a module and a class. When a module is used to mix additional behavior and information into a class, it’s called a <b>mixin</b>. Coming back full circle to the Enumerable Module, can you guess what it is now? It’s a bunch of methods that work with collections. It’s essentially just a giant toolbox that we can take tools out of and use at our leisure!<br><br>
+
+      The Enumerable Module empowers mostly the <b>Array</b> and <b>Hash</b> classes. You can read more about those <a href=”http://morganmccrory.github.com/blog/t3-arrays-hashes.html”>here</a>.
+
+      <h3>Stop Writing “For” Loops</h3>
+      A class that uses or “mixes in” the Enumerable Module must define the <b>#each</b> method. The #each method looks like this:<br><br>
+
+      <div class="ruby">
+      [1, 2, 3, 4, 5].each { |n| puts n }
+      </div><br><br>
+
+      This method is surprisingly straightforward once the syntax is explained. For <b>each</b> number in the Array, I named the number “n” (But you can name it whatever you would like… “number” or “days_without_you” or anything!) and then I put “n”. This will simply list out each number: <br><br>
+
+      <div class="ruby"><font color="#404040">
+      1
+      2
+      3
+      4
+      5
+      </font></div><br><br>
+
+      You can manipulate “n” in a bunch of ways, depending on what you are trying to do. With each element in the array, it will execute the given block. The Enumerable Module is a toolbox of methods building upon this method. Just to name a few: all?, any?, collect, detect, each_cons, each_slice, each_with_index, enum_cons, enum_slice, enum_with_index, find, find_all, grep, include?, inject, map, max, member?, min, partition, reject, select, sort, sort_by, to_a, to_set, zip. Phew!<br><br>
+
+      <h3>#map</h3>
+
+      Let’s start with an easy method, <b>#map</b>. This method is extremely similar to the #each method, but with one big difference. #each simply iterates over the given enumerable, running the block for each value. It dismisses the return value of the block after the method is complete. For example:<br><br>
+
+      <div class="ruby">
+      [4, 5, 6].each { |x| x + 1 }<br>
+      <font color="#404040"># => [4, 5, 6]</font>
+      </div><br><br>
+
+      On the other hand, #map returns a new object with the changes that you make inside of the block.<br><br>
+
+      <div class="ruby">
+      [1, 2, 3].map { |i| i + 1 }<br>
+      <font color="#404040"># => [2, 3, 4]</font>
+      </div><br><br>
+
+      Therefore it “maps” each element to a new one. It is also worth noting that #map doesn’t set an values in the <i>original</i> collection, but only in the returned copy of it. Also, #map and <b>#collect</b> are exactly the same! I have seen #map used more in practice, so I would recommend sticking with that one, but it doesn’t really matter too much.<br><br>
+
+      <h3>#group_by</h3>
+
+      Can you guess what this method does just by seeing the name? That’s the entire point of Ruby – to be a programmer-friendly language! The fact that it is so easily readable is what makes it great. Let’s check out an example of <b>#group_by</b>:<br><br>
+
+      <div class="ruby">
+      (1..10).group_by { |i|i % 3 }
+      <font color="#404040"># => {1=>[1, 4, 7, 10], 2=>[2, 5, 8], 0=>[3, 6, 9]}</font>
+      </div><br><br>
+
+      As you can see, this method grouped each of our numbers according to their divisibility by 3. It groups the collection by the result of the block, and returns a hash where the keys are the evaluated result from the block, and the values are arrays of elements that correspond to the key.<br><br>
+
+      <h3>#cycle</h3>
+
+      The last method in the Enumerable Module that we will look at today is <b>#cycle</b>. This method calls the block for each element repeatedly for “n” times, or forever is no time was given. If a negative integer is given or the collection is empty, then it does nothing.<br><br>
+
+      <div class="ruby">
+      array = ["a", "b", "c"]
+      array.cycle { |x| puts x }  <font color="#404040"># a, b, c, a, b, c,.. forever.</font>
+      array.cycle(2) { |x| puts x }  <font color="#404040"># a, b, c, a, b, c.</font>
+      </div><br><br>
+
+      And that’s it! If you have some extra time to spare, go ahead and check out the <a href=”http://ruby-doc.org/core-2.2.0/Enumerable.html”>Ruby Docs on the Enumerable Module</a> and try out some more methods!<br><br>
+
+      <i>If you have any questions or comments, please send me either an <a href=”morgan@codeshewrote.io”>email</a> or a <a href=”http://www.twitter.com/morganmccrory”>tweet</a>. Happy coding!<br><br>Posted by Morgan McCrory | January 16, 2015</i>
 <br>
 <br>
   </div>
@@ -54,15 +111,7 @@
     <span class="right_title">ABOUT</span>
     </div>
     <br><br>
-  This is lots of testing words.
-  They will look so much different.
-  My name is Morgan and I am awesome.
-  I enjoy coding and making sarcastic
-  comments. I also like to read.
-    <div class="right_headingtw">
-    <span class="right_title">LATEST TWEETS</span>
-    </div>
-
+    I have nothing to declare but my genius. Oscar Wilde said that. I'm just here for the punch.
     <div class="right_heading_prev">
     <span class="right_title">PREVIOUS POSTS</span>
     </div>
@@ -80,6 +129,6 @@
     </span>
     </div>
 </div></div>
-  <div class="bottom"><center>Previous Post</center></div>
+  <div class="bottom"><center><a href="http://morganmccrory.github.com/blog/c4-tech-issues.html">&larr; Previous Post</a></center></div>
   </body>
 </html>
