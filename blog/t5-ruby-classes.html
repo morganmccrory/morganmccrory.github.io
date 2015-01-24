@@ -1,0 +1,102 @@
+<!DOCTYPE = HTML>
+<html>
+<head>
+<title>Code She Wrote</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/blog-stylesheet.css">
+<style type="text/css"></style>
+</head>
+
+<body>
+<div class="background">
+<div class="navigation_bar">
+  <ul>
+    <li><a href="http://codeshewrote.io" id="navbar_homelink"><span>code</span>shewrote.io</a></li>
+    <li><a href="http://morganmccrory.github.io">portfolio</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">about</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="http://www.twitter.com/morganmccrory" class="twitter"></a></li>
+    <li><a href="http://www.linkedin.com/in/morganmccrory" class="linkedin"></a></li>
+    <li><a href="http://www.github.com/morganmccrory" class="github"></a></li>
+  </ul>
+</div>
+<br>
+<br>
+<br>
+<div class="main">
+<img src="http://morganmccrory.github.io/stylesheets/codeshewrote5.jpg" id="codeshewrote"><br>
+<img src="https://morganmccrory.github.io/imgs/computer.jpg" id="picture_me"><br><br>
+  <div class="main_left">
+    <div class="left_heading">
+      <span class="left_title">January 20, 2015</span>
+    </div>
+      <h1>Getting an “A” in Ruby Classes</h1>
+      <p>I was talking with some friends about Ruby last night, and I heard the perfect analogy to describe <b>Ruby classes</b>. Let’s pretend that you want to create some widgets. They will all have the same shape and basic characteristics. It would be so cool if you could create a machine that can “stamp” each widget out – in fact, that would probably save you a lot of work. That is exactly what a class does. It allows you to create your own specific “stamp”, which can then create different objects as if on an assembly line. Each new object, by default, has the attributes and methods that you specified built into them.</p><br><br>
+
+      <p>Almost everything in Ruby is an <b>object</b>. We’ve been using them all along! That’s why Ruby is an <b>object-oriented</b> programming language, because the things that we are manipulating with our methods are called objects!</p><br><br>
+
+      <p>To illustrate, let’s build our own class right now. First, we must  give the class a name. Proper formatting for class names <b>start with a capital letter and use CamelCase</b> as opposed to_underscores. </p>
+
+      <div class=”ruby”>
+        <font color=”#BDA0CB”>class <font color=”#EDCB62”>Dog</font><br>
+        end</font>
+      </div><br><br>
+
+      <p>So far, our class does absolutely nothing. That’s right – nada. Since we want our class to actually be functional, let’s add the <b>initialize</b> method. This method is <b>required</b> for every class that you make. It is what Ruby uses to “start up” each object that the class creates.</p>
+
+      <div class=”ruby”>
+        <font color=”#BDA0CB”>class <font color=”#EDCB62”>Dog</font><br>
+        &nbsp; &nbsp; def</font> initialize<br>
+        &nbsp; &nbsp; <font color=”#BDA0CB”>end<br>
+        end</font>
+      </div></br></br>
+
+      <p>Now that we’ve defined our initialize method, we need to assign instance variables by stating them inside this method. An <b>instance variable</b> is a variable that is bound to an <i>instance</i> of a class. We signify that a variable is an instance variable by using the @ symbol before the variable name. What instance variables should our Dog class take?</p>
+
+      <div class=”ruby”>
+        <font color=”#BDA0CB”>class <font color=”#EDCB62”>Dog</font><br>
+        &nbsp; &nbsp; def</font> initialize(breed)<br>
+        &nbsp; &nbsp; <font color=”#FF6666”>@breed</font> = breed<br>
+        &nbsp; &nbsp; <font color=”#BDA0CB”>end<br>
+        end</font>
+      </div></br></br>
+
+      <p>Now, we are ready to create an object! Let’s create our first instance of the Dog class.</p>
+
+      <div class=”ruby”>
+        <font color=”#BDA0CB”>class <font color=”#EDCB62”>Dog</font><br>
+        &nbsp; &nbsp; def</font> initialize(breed)<br>
+        &nbsp; &nbsp; <font color=”#FF6666”>@breed</font> = breed<br>
+        &nbsp; &nbsp; <font color=”#BDA0CB”>end<br>
+        end</font><br><br>
+        snoopy = <font color=”#EDCB62”>Dog</font>.new(<font color=”#FFFF7E “>“beagle”</font>)
+      </div></br></br>
+
+      <p>This looks great, but our class doesn’t really do anything. It lets us create a new object and stores what breed it is, but maybe we can make it a little more interesting. If we add another method to our class, the objects we create will be able to use that method.</p>
+
+      <div class=”ruby”>
+        <font color=”#BDA0CB”>class <font color=”#EDCB62”>Dog</font><br>
+        &nbsp; &nbsp; def</font> initialize(breed)<br>
+        &nbsp; &nbsp; <font color=”#FF6666”>@breed</font> = breed<br>
+        &nbsp; &nbsp; <font color=”#BDA0CB”>end<br><br>
+        &nbsp; &nbsp; def</font> bark<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; <font color=”#BDA0CB”>puts</font> <font color=”#FFFF7E “>“Ruff! Ruff!”</font><br>
+        &nbsp; &nbsp; <font color=”#BDA0CB”>end<br>
+        end</font><br><br>
+        snoopy = <font color=”#EDCB62”>Dog</font>.new(<font color=”#FFFF7E “>“beagle”</font>)<br>
+        snoopy.bark<br><br>
+        <font color="#d3d3d3"># returns “Ruff! Ruff!”</font>
+     </div></br></br>
+
+      <p>Now every object in the Dog class that we make can call the bark method. We can put as many methods into the class as we would like – but be careful to not overcrowd it. You should only put in methods that all (or most) of the objects that you create will use.<p><br><br>
+
+      <p class="sign_off">If you have any questions or comments, please send me either an <a href="mailto:morgan@codeshewrote.io">email</a> or a <a href="http://www.twitter.com/morganmccrory">tweet</a>. Happy coding!<br><br>Posted by Morgan McCrory</p>
+<br>
+<br>
+  </div>
+  </div>
+  <div class="bottom"><a href="http://morganmccrory.github.com/blog/c4-tech-issues.html"> &#8592; Previous Post</a></div></div>
+  </body>
+</html>
