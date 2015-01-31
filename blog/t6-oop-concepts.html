@@ -39,10 +39,10 @@
       <p>Blocks, procs, and lambdas all sound scarier than they actually are. A Ruby <b>block</b> is simply a small snippet of code that can be executed. In fact, you've probably used blocks before. Here are some examples:</p>
 
       <div class="ruby">
-      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6347">map</font><font color="#BDA0CB"> do</font> |<font color="#FF6347"> numbers </font>|<br>
-      &nbsp;&nbsp;<font color="#FF6347"> puts numbers</font><br>
+      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FA8072">map</font><font color="#BDA0CB"> do</font> |<font color="#FA8072"> numbers </font>|<br>
+      &nbsp;&nbsp;<font color="#FA8072"> puts numbers</font><br>
       <font color="#BDA0CB">end</font><br><br>
-      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6347">map</font> { | <font color="#FF6347">numbers</font> |<font color="#FF6347"> puts numbers</font> }
+      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FA8072">map</font> { | <font color="#FA8072">numbers</font> |<font color="#FA8072"> puts numbers</font> }
       </div><br><br>
 
       <p>Blocks can be used with methods such as #each, #map, #collect, and many others. But why do some methods accept a block and others do not? The methods that do accept blocks have a way of giving over control from the calling method to the block and then back again. What is interesting, is that we can actually build this into a method that we create by using the "<b>yield</b>" keyword. Here is an example:</p>
@@ -94,16 +94,16 @@
       <p>Unlike blocks, <b>procs are objects</b>. They have powers that blocks do not have (such as being stored as a variable.) Also unlike blocks, we can call procs directly by using the #call method. The syntax for that goes like this:</p>
 
       <div class="ruby">
-      <font color="#FF6347">example</font> = <font color="#EDCB62">Proc</font>.<font color="#FF6347">new</font> { <font color="#d3d3d3"># block of code goes here</font> }<br>
-      <font color="#FF6347">example</font>.<font color="#FF6347">call</font><br><br>
+      <font color="#FA8072">example</font> = <font color="#EDCB62">Proc</font>.<font color="#FA8072">new</font> { <font color="#d3d3d3"># block of code goes here</font> }<br>
+      <font color="#FA8072">example</font>.<font color="#FA8072">call</font><br><br>
       <font color="#d3d3d3"># does that block of code!</font>
       </div><br><br>
 
       <p>Before we move on to lambdas, let's cover one more thing about procs. You can actually <b>convert a symbol to a proc using &</b>. These are used all of the time in Ruby!</p>
 
       <div class="ruby">
-      <font color="#FF6347">strings</font> = [<font color="#FFFF7E">"1"</font>, <font color="#FFFF7E">"2"</font>, <font color="#FFFF7E">"3"</font>]<br>
-      <font color="#FF6347">integers</font> = <font color="#FF6347">strings</font>.<font color="#FF6347">map</font>(&<font color="#FF6347">:to_i</font>)<br>
+      <font color="#FA8072">strings</font> = [<font color="#FFFF7E">"1"</font>, <font color="#FFFF7E">"2"</font>, <font color="#FFFF7E">"3"</font>]<br>
+      <font color="#FA8072">integers</font> = <font color="#FA8072">strings</font>.<font color="#FA8072">map</font>(&<font color="#FA8072">:to_i</font>)<br>
       <font color="#d3d3d3"># returns [1, 2, 3]</font>
       </div><br><br>
 
