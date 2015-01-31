@@ -36,22 +36,22 @@
 
       <h3>Blocks: You Already Know This</h3>
 
-      <p>Blocks, procs, and lambdas all sound scarier than they actually are. A Ruby <b>block</b> is simply a small snippet of code that can be executed. In fact, you've probably used blocks before. Here are some examples:</p><br><br>
+      <p>Blocks, procs, and lambdas all sound scarier than they actually are. A Ruby <b>block</b> is simply a small snippet of code that can be executed. In fact, you've probably used blocks before. Here are some examples:</p>
 
       <div class="ruby">
-      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6666">map</font><font color="#BDA0CB"> do</font> |<font color="#FF6666">numbers</font>|<br>
-      &nbsp;&nbsp;<font color="#FF6666">puts numbers</font><br>
+      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6347">map</font><font color="#BDA0CB"> do</font> |<font color="#FF6347"> numbers </font>|<br>
+      &nbsp;&nbsp;<font color="#FF6347"> puts numbers</font><br>
       <font color="#BDA0CB">end</font><br><br>
-      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6666">map</font> { |<font color="#FF6666">numbers</font>|<font color="#FF6666">puts numbers</font> }
+      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6347">map</font> { | <font color="#FF6347">numbers</font> |<font color="#FF6347"> puts numbers</font> }
       </div><br><br>
 
       <p>Blocks can be used with methods such as #each, #map, #collect, and many others. But why do some methods accept a block and others do not? The methods that do accept blocks have a way of giving over control from the calling method to the block and then back again. What is interesting, is that we can actually build this into a method that we create by using the "<b>yield</b>" keyword. Here is an example:</p>
 
       <div class="ruby">
       <font color="#BDA0CB">def</font> block_example<br>
-      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"We have just created a method!"</font><br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E"> "We have just created a method!"</font><br>
       &nbsp;&nbsp;<font color="#BDA0CB">yield</font><br>
-      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"And now we're back inside our method!"</font><br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E"> "And now we're back inside our method!"</font><br>
       <font color="#BDA0CB">end</font><br><br>
       block_example { <font color="#6495ED">puts</font> <font color="#FFFF7E">"And now we're in our block!"</font> }
       </div><br><br>
@@ -60,12 +60,12 @@
 
       <div class="ruby">
       <font color="#BDA0CB">def</font> yield_ex(age)<br>
-      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"We have just created a method!"</font><br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E"> "We have just created a method!"</font><br>
       &nbsp;&nbsp;<font color="#BDA0CB">yield</font>(<font color="#FFFF7E">"26"</font>)<br>
-      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"In between our two yields!"</font><br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E"> "In between our two yields!"</font><br>
       &nbsp;&nbsp;<font color="#BDA0CB">yield</font>(age)<br>
       <font color="#BDA0CB">end</font><br><br>
-       yield_ex(<font color="#FFFF7E">"27"</font>) { |age| <font color="#6495ED">puts</font><font color="#FFFF7E">"I am #{age} years old!"</font> }
+       yield_ex(<font color="#FFFF7E">"27"</font>) { | age | <font color="#6495ED">puts</font><font color="#FFFF7E"> "I am #{age} years old!"</font> }
        </div><br><br>
 
       <p>OK, so what is going on here in our example? We created a method with "yield", as we did in our previous example, but with a few changes. Our "yield_ex" method is defined with one parameter, "age".
@@ -82,7 +82,7 @@
       <p>Because of this, we can't save a block as a variable and then use it later. Does that mean that we it is impossible to keep our code DRY? What if we have to keep typing in the same block over and over again? That, my friends, is where <b>procs</b> come into play. Procs are simply blocks that can be saved and then reused again later. You only need to write it one time, and then you can use it as many times as you'd like! Let's look at an example of a proc:</p>
 
       <div class="ruby">
-      times_two <font color="#66CDAA">=</font> <font color="#EDCB62">Proc</font>.new <font color="#BDA0CB">do</font> |num|<br>
+      times_two <font color="#66CDAA">=</font> <font color="#EDCB62">Proc</font>.new <font color="#BDA0CB">do</font> | num |<br>
       &nbsp;&nbsp;num <font color="#66CDAA">*</font> <font color="#EDCB62">2</font><br>
       <font color="#BDA0CB">end</font><br><br>
       (<font color="#EDCB62">1</font>..<font color="#EDCB62">10</font>).to_a.map(<font color="#66CDAA">&</font>times_two)<br><br>
@@ -94,16 +94,16 @@
       <p>Unlike blocks, <b>procs are objects</b>. They have powers that blocks do not have (such as being stored as a variable.) Also unlike blocks, we can call procs directly by using the #call method. The syntax for that goes like this:</p>
 
       <div class="ruby">
-      <font color="#FF6666">example</font> = <font color="#EDCB62">Proc</font>.<font color="#FF6666">new</font> { <font color="#d3d3d3"># block of code goes here</font> }<br>
-      <font color="#FF6666">example</font>.<font color="#FF6666">call</font><br><br>
+      <font color="#FF6347">example</font> = <font color="#EDCB62">Proc</font>.<font color="#FF6347">new</font> { <font color="#d3d3d3"># block of code goes here</font> }<br>
+      <font color="#FF6347">example</font>.<font color="#FF6347">call</font><br><br>
       <font color="#d3d3d3"># does that block of code!</font>
       </div><br><br>
 
       <p>Before we move on to lambdas, let's cover one more thing about procs. You can actually <b>convert a symbol to a proc using &</b>. These are used all of the time in Ruby!</p>
 
       <div class="ruby">
-      <font color="#FF6666">strings</font> = [<font color="#FFFF7E">"1"</font>, <font color="#FFFF7E">"2"</font>, <font color="#FFFF7E">"3"</font>]<br>
-      <font color="#FF6666">integers</font> = <font color="#FF6666">strings</font>.<font color="#FF6666">map</font>(&<font color="#FF6666">:to_i</font>)<br>
+      <font color="#FF6347">strings</font> = [<font color="#FFFF7E">"1"</font>, <font color="#FFFF7E">"2"</font>, <font color="#FFFF7E">"3"</font>]<br>
+      <font color="#FF6347">integers</font> = <font color="#FF6347">strings</font>.<font color="#FF6347">map</font>(&<font color="#FF6347">:to_i</font>)<br>
       <font color="#d3d3d3"># returns [1, 2, 3]</font>
       </div><br><br>
 
@@ -114,7 +114,7 @@
       <p>Lambdas are also objects in Ruby, much like procs. In fact, they are almost identical to procs except for a few key differences. The first difference being, of course, the syntax used to create a lambda. What is the syntax? Let's take a look:</p>
 
       <div class="ruby">
-      <font color="#BDA0CB">lambda</font> { |param| block of code }
+      <font color="#BDA0CB">lambda</font> { | param | block of code }
       </div><br><br>
 
       <p>As you can see, it's VERY easy to create a lambda! The next big difference between a lambda and a proc is that a lambda checks the number of arguments that is passed to it, while a proc does not. Therefore, a lambda will put out an error message if you pass the wrong number of arguments to it. A proc, on the other hand, will ignore unexpected arguments and put "nil" in place of any that are missing.</p><br><br>
