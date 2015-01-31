@@ -1,0 +1,134 @@
+<!DOCTYPE = HTML>
+<html>
+<head>
+<title>Code She Wrote</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/blog-stylesheet.css">
+<style type="text/css"></style>
+</head>
+
+<body>
+<div class="background">
+<div class="navigation_bar">
+  <ul>
+    <li><a href="http://codeshewrote.io" id="navbar_homelink"><span>code</span>shewrote.io</a></li>
+    <li><a href="http://morganmccrory.github.io">portfolio</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">about</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="http://www.twitter.com/morganmccrory" class="twitter"></a></li>
+    <li><a href="http://www.linkedin.com/in/morganmccrory" class="linkedin"></a></li>
+    <li><a href="http://www.github.com/morganmccrory" class="github"></a></li>
+  </ul>
+</div>
+<br>
+<br>
+<br>
+<div class="main">
+<img src="http://morganmccrory.github.io/stylesheets/codeshewrote5.jpg" id="codeshewrote"><br>
+<img src="https://morganmccrory.github.io/imgs/computer.jpg" id="picture_me"><br><br>
+  <div class="main_left">
+    <div class="left_heading">
+      <span class="left_title">January 31, 2015</span>
+    </div>
+      <h1>Blocks, and Procs, and Lambdas! Oh my!</h1>
+
+      <h3>Blocks: You Already Know This</h3>
+
+      <p>Blocks, procs, and lambdas all sound scarier than they actually are. A Ruby <b>block</b> is simply a small snippet of code that can be executed. In fact, you've probably used blocks before. Here are some examples:</p><br><br>
+
+      <div class="ruby">
+      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6666">map</font><font color="#BDA0CB"> do</font> |<font color="#FF6666">numbers</font>|<br>
+      &nbsp;&nbsp;<font color="#FF6666">puts numbers</font><br>
+      <font color="#BDA0CB">end</font><br><br>
+      [<font color="#EDCB62">1</font>, <font color="#EDCB62">2</font>, <font color="#EDCB62">3</font>].<font color="#FF6666">map</font> { |<font color="#FF6666">numbers</font>|<font color="#FF6666">puts numbers</font> }
+      </div><br><br>
+
+      <p>Blocks can be used with methods such as #each, #map, #collect, and many others. But why do some methods accept a block and others do not? The methods that do accept blocks have a way of giving over control from the calling method to the block and then back again. What is interesting, is that we can actually build this into a method that we create by using the "<b>yield</b>" keyword. Here is an example:</p>
+
+      <div class="ruby">
+      <font color="#BDA0CB">def</font> block_example<br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"We have just created a method!"</font><br>
+      &nbsp;&nbsp;<font color="#BDA0CB">yield</font><br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"And now we're back inside our method!"</font><br>
+      <font color="#BDA0CB">end</font><br><br>
+      block_example { <font color="#6495ED">puts</font> <font color="#FFFF7E">"And now we're in our block!"</font> }
+      </div><br><br>
+
+      <p>We've just defined our very own method, then we left the method to a block, and then returned back into the method. Pretty cool, right? You can also pass parameters to "yield". As usual, the best way to demonstrate this will be through example:
+
+      <div class="ruby">
+      <font color="#BDA0CB">def</font> yield_ex(age)<br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"We have just created a method!"</font><br>
+      &nbsp;&nbsp;<font color="#BDA0CB">yield</font>(<font color="#FFFF7E">"26"</font>)<br>
+      &nbsp;&nbsp;<font color="#6495ED">puts</font><font color="#FFFF7E">"In between our two yields!"</font><br>
+      &nbsp;&nbsp;<font color="#BDA0CB">yield</font>(age)<br>
+      <font color="#BDA0CB">end</font><br><br>
+       yield_ex(<font color="#FFFF7E">"27"</font>) { |age| <font color="#6495ED">puts</font><font color="#FFFF7E">"I am #{age} years old!"</font> }
+       </div><br><br>
+
+      <p>OK, so what is going on here in our example? We created a method with "yield", as we did in our previous example, but with a few changes. Our "yield_ex" method is defined with one parameter, "age".
+      The first time we call "yield", we give it an argument of "26" for the "age" parameter. And since "yield_ex" has a "yield" statement inside of it, we need to supply a block. This block is supplied when we call "yield_ex" on the last line.</p><br><br>
+
+      <p>The first yield statement passes "26" because that is the argument that we gave it. However, the second yield statement passes "27" because the argument inside of the original method is the parameter variable. On the last line, when we call "yield_ex("27")" we are giving that variable a value, and so it is passed. In other words, we can give yield a value ourselves, or we can call a variable and give it a value later.</p><br><br>
+
+      <p>Even though blocks have a lot going on inside of them, they are still fairly straightforward. Now let's take a look into procs.</p>
+
+      <h3>Procs: Blocks You Can Save!</h3>
+
+      <p>One of the most important rules that you will learn in Ruby will be to keep your code <b>DRY</b>. In other words, <b>D</b>on't <b>R</b>epeat <b>Y</b>ourself. You want to keep your code as simple as possible, so that it is easy to change later on (as changes are inevitable!) The problem with blocks is that they are <i>not</i> objects in Ruby. They are one of the few exceptions to the rule in Ruby that "everything is an object."</p><br><br>
+
+      <p>Because of this, we can't save a block as a variable and then use it later. Does that mean that we it is impossible to keep our code DRY? What if we have to keep typing in the same block over and over again? That, my friends, is where <b>procs</b> come into play. Procs are simply blocks that can be saved and then reused again later. You only need to write it one time, and then you can use it as many times as you'd like! Let's look at an example of a proc:</p>
+
+      <div class="ruby">
+      times_two <font color="#66CDAA">=</font> <font color="#EDCB62">Proc</font>.new <font color="#BDA0CB">do</font> |num|<br>
+      &nbsp;&nbsp;num <font color="#66CDAA">*</font> <font color="#EDCB62">2</font><br>
+      <font color="#BDA0CB">end</font><br><br>
+      (<font color="#EDCB62">1</font>..<font color="#EDCB62">10</font>).to_a.map(<font color="#66CDAA">&</font>times_two)<br><br>
+      <font color="#d3d3d3"># returns [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]</font>
+      </div>
+
+      <p>Let's break down some of the syntax that we used there. First, we called "<b>Proc.new</b>" and passed in the block that we wanted to save. In this case, we are simply multiplying any number by 2. Then, we can pass the proc by using parathensis and the "&" symbol to a method that would otherwise take a block. This way, we don't have to write the sampe block over and over again! Some other methods besides #map that we could have used to call the proc would be #collect, #each, or even #select.</p><br><br>
+
+      <p>Unlike blocks, <b>procs are objects</b>. They have powers that blocks do not have (such as being stored as a variable.) Also unlike blocks, we can call procs directly by using the #call method. The syntax for that goes like this:</p>
+
+      <div class="ruby">
+      <font color="#FF6666">example</font> = <font color="#EDCB62">Proc</font>.<font color="#FF6666">new</font> { <font color="#d3d3d3"># block of code goes here</font> }<br>
+      <font color="#FF6666">example</font>.<font color="#FF6666">call</font><br><br>
+      <font color="#d3d3d3"># does that block of code!</font>
+      </div><br><br>
+
+      <p>Before we move on to lambdas, let's cover one more thing about procs. You can actually <b>convert a symbol to a proc using &</b>. These are used all of the time in Ruby!</p>
+
+      <div class="ruby">
+      <font color="#FF6666">strings</font> = [<font color="#FFFF7E">"1"</font>, <font color="#FFFF7E">"2"</font>, <font color="#FFFF7E">"3"</font>]<br>
+      <font color="#FF6666">integers</font> = <font color="#FF6666">strings</font>.<font color="#FF6666">map</font>(&<font color="#FF6666">:to_i</font>)<br>
+      <font color="#d3d3d3"># returns [1, 2, 3]</font>
+      </div><br><br>
+
+      <p>Instead of writing { |n| n.to_i }, all we need to write is (&:to_i) and we're done! This might not seem like a huge difference right now, but as blocks become longer and more complicated, then procs become increasingly valuable.</p>
+
+      <h3>Lambdas: A Little Bit Different</h3>
+
+      <p>Lambdas are also objects in Ruby, much like procs. In fact, they are almost identical to procs except for a few key differences. The first difference being, of course, the syntax used to create a lambda. What is the syntax? Let's take a look:</p>
+
+      <div class="ruby">
+      <font color="#BDA0CB">lambda</font> { |param| block of code }
+      </div><br><br>
+
+      <p>As you can see, it's VERY easy to create a lambda! The next big difference between a lambda and a proc is that a lambda checks the number of arguments that is passed to it, while a proc does not. Therefore, a lambda will put out an error message if you pass the wrong number of arguments to it. A proc, on the other hand, will ignore unexpected arguments and put "nil" in place of any that are missing.</p><br><br>
+
+      <p>Finally, when a lambda returns, it gives control back to the calling method. However, when a proc returns, it does not go back to the calling method at all. To illustrate this concept, imagine that we define a method. Inside the method, we put in a proc, and then #call the proc. Afterwards, we have another few lines of code within the method before we "end". A proc will not run those last lines of code after it has been called. A lambda, on the other hand, will run the rest of the code.</p><br><br>
+
+      <p>And that's all there is to it! For some further reading, be sure to check out both <a href="http://codecademy.com">Codecademy.com</a> and <a href="http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas">Ruby Monk</a>.</p><br><br>
+
+
+      <p class="sign_off">If you have any questions or comments, please send me either an <a href="mailto:morgan@codeshewrote.io">email</a> or a <a href="http://www.twitter.com/morganmccrory">tweet</a>. Happy coding!<br><br>Posted by Morgan McCrory</p>
+<br>
+<br>
+  </div>
+  </div>
+  <div class="bottom"><a href="http://morganmccrory.github.io/blog/c6-stereotype-threat.html"> &#8592; Previous Post</a></div></div>
+  </body>
+</html>
