@@ -87,7 +87,7 @@
       <font color="#BDA0CB">end</font><br><br>
       (<font color="#EDCB62">1</font>..<font color="#EDCB62">10</font>).to_a.map(<font color="#66CDAA">&</font>times_two)<br><br>
       <font color="#d3d3d3"># returns [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]</font>
-      </div>
+      </div><br><br>
 
       <p>Let's break down some of the syntax that we used there. First, we called "<b>Proc.new</b>" and passed in the block that we wanted to save. In this case, we are simply multiplying any number by 2. Then, we can pass the proc by using parathensis and the "&" symbol to a method that would otherwise take a block. This way, we don't have to write the sampe block over and over again! Some other methods besides #map that we could have used to call the proc would be #collect, #each, or even #select.</p><br><br>
 
