@@ -63,18 +63,18 @@
       <code class="prettyprint">
         for(var counter = 0; counter < 6; counter++) {<br>
         &nbsp; console.log(counter);<br>
-      }
-      </code><br><br>
+      }<br>
+      </code><br><br><br>
 
       <p>This does the exact same thing in JavaScript that it did in Ruby - it puts a number 1 through 5 (inclusive) on each line in the console. However, there is some new syntax here, so let's take a look:</p><br><br>
 
-      <p><b>var counter = 1;</b></p>
+      <p><b>var counter = 1;</b></p><br>
       <p>This declares a <b>var</b>iable named "counter" with a value of 1. When the 'for' loop is executed, the code in the code block (the part between { and }) - it does so by starting off where counter = 1.</p><br><br>
 
-      <p><b>counter < 6;</b></p>
+      <p><b>counter < 6;</b></p><br>
       <p>This tells the loop to continue running while counter < 6. So when counter = 2 or counter = 3, the loop will continue to run. However, once the counter is no longer less than 6, it will stop running.</p><br><br>
 
-      <p><b>counter++</b></p>
+      <p><b>counter++</b></p><br>
       <p>This is simply a shorthand way of saying "counter = counter + 1". Therefore, each time the loop runs through the code block, the value of counter will increase by one. This is what makes it possible for our loop to end so we don't end up creating an <b>infinite loop</b>.</p>
 
       <h3>'While' You're Here...</h3>
@@ -88,7 +88,7 @@
         while counter < 6<br>
         &nbsp; puts counter<br>
         &nbsp; counter += 1<br>
-        end
+        end<br>
       </code><br><br>
 
       <p>This code should be fairly self-explanatory. We define a variable named "counter" and set it equal to 0. While the counter is less than 6, put the value of the counter. Also, each time the loop runs, add 1 to counter and set that as the new value of counter.</p><br><br>
@@ -100,7 +100,7 @@
         while(counter < 6) {<br>
         &nbsp; console.log(counter);<br>
         &nbsp; counter++;<br>
-      }
+      }<br>
       </code><br><br>
 
       <p>As you can see, the 'while' loop still evaluates a condition and continues running as long as the condition is true. The code above demonstrates the same example that we saw with Ruby, but you can also evaluate a condition without using numbers:</p>
@@ -110,7 +110,7 @@
         while(condition) {<br>
         &nbsp; console.log("The condition is true!");<br>
         &nbsp; condition = false;<br>
-      }
+      }<br>
       </code><br><br>
 
       <p>Notice the "while(condition)" syntax in the above example. This is a shorthand way of saying "while condition === true". It is just shorter and easier to leave out the "=== true" portion and leave it as implied.</p><br><br>
@@ -123,6 +123,6 @@
   </div>
   </div>
   <div class="bottom"><a href="http://morganmccrory.github.io/blog/c7-values.html"> &#8592; Previous Post</a></div></div>
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" skin=desert></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" skin="desert"></script>
   </body>
 </html>
