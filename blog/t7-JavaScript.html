@@ -1,0 +1,128 @@
+<!DOCTYPE = HTML>
+<html>
+<head>
+<title>Code She Wrote</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://morganmccrory.github.io/stylesheets/blog-stylesheet.css">
+<style type="text/css"></style>
+</head>
+
+<body>
+<div class="background">
+<div class="navigation_bar">
+  <ul>
+    <li><a href="http://codeshewrote.io" id="navbar_homelink"><span>code</span>shewrote.io</a></li>
+    <li><a href="http://morganmccrory.github.io">portfolio</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">about</a></li>
+    <li><a href="http://morganmccrory.github.io/blog/contact.html">contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="http://www.twitter.com/morganmccrory" class="twitter"></a></li>
+    <li><a href="http://www.linkedin.com/in/morganmccrory" class="linkedin"></a></li>
+    <li><a href="http://www.github.com/morganmccrory" class="github"></a></li>
+  </ul>
+</div>
+<br>
+<br>
+<br>
+<div class="main">
+<img src="http://morganmccrory.github.io/stylesheets/codeshewrote5.jpg" id="codeshewrote"><br>
+<img src="https://morganmccrory.github.io/imgs/computer.jpg" id="picture_me"><br><br>
+  <div class="main_left">
+    <div class="left_heading">
+      <span class="left_title">February 8, 2015</span>
+    </div>
+      <h1>Looping in Ruby vs. Looping in JavaScript</h1>
+
+      <p>Looping in JavaScript is <i>extremely</i> similar to looping in Ruby. The
+        only thing that changes is a little bit of syntax. Let's take a look at some specific loops in both languages.</p>
+
+      <h3> The 'For' Loop </h3>
+
+      <p>The 'for' loop is one of the most common loops in both languages. It is most useful for when you <i>know</i> how many times you'll be looping. Instead of writing "puts 1, puts 2, puts 3, puts 4, puts 5", we can write a loop that does this for us.</p><br><br>
+
+      <p>Here is a 'for' loop in Ruby:</p>
+
+      <code class="prettyprint">
+        for num in 1..5<br>
+        &nbsp; puts num<br>
+        end<br><br>
+
+        # returns<br>
+        1<br>
+        2<br>
+        3<br>
+        4<br>
+        5<br>
+      </code>
+
+      <p>In this example, each number 1 through 5 was printed on a new line to the console. This code is telling Ruby that for the variable "num" in the range of 1 to 5, do what is next. In this case, "puts num" was what was next. One of the biggest tings to note is that we used an <i>inclusive</i> range in this example with the use of the two dots in 1..5. If we had used an <i>exclusive</i> range instead, written as 1...5, then it would have only "puts"ed out numbers 1 through 4.</p><br><br>
+
+      <p>Let's look at the same 'for' loop in JavaScript:</p>
+
+      <code class="prettyprint">
+        for(var counter = 0; counter < 6; counter++) {<br>
+        &nbsp; console.log(counter);<br>
+      }
+      </code>
+
+      <p>This does the exact same thing in JavaScript that it did in Ruby - it puts a number 1 through 5 (inclusive) on each line in the console. However, there is some new syntax here, so let's take a look:</p><br><br>
+
+      <p><b>var counter = 1;</b></p><br>
+      <p>This declares a <b>var</b>iable named "counter" with a value of 1. When the 'for' loop is executed, the code in the code block (the part between { and }) - it does so by starting off where counter = 1.</p><br><br>
+
+      <p><b>counter < 6;</b></p><br><br>
+      <p>This tells the loop to continue running while counter < 6. So when counter = 2 or counter = 3, the loop will continue to run. However, once the counter is no longer less than 6, it will stop running.</p><br><br>
+
+      <p><b>counter++</b></p><br><br>
+      <p>This is simply a shorthand way of saying "counter = counter + 1". Therefore, each time the loop runs through the code block, the value of counter will increase by one. This is what makes it possible for our loop to end so we don't end up creating an <b>infinite loop</b>. </p><br><br>
+
+      <h3>'While' You're Here...</h3>
+
+      <p>Let's now take a look at 'while' loops in both Ruby and JavaScript. 'While' loops are useful when you want to repeat a certain block of code while a certain condition is true, but you aren't sure how many times it will be repeated. One example is when you are prompting a user for a zip code, which is 5 integers, and they give you a 6 digit number. You may have to re-ask them several times before you get the input that you are looking for. To do this, we use a 'while' loop. It checks to see if a certain condition is true, and keeps running as long as it is true.</p><br><br>
+
+      <p>Here is a Ruby 'while' loop:</p><br><br>
+
+      <code class="prettyprint">
+        counter = 1<br>
+        while counter < 6<br>
+        &nbsp; puts counter<br>
+        &nbsp; counter += 1<br>
+        end
+      </code>
+
+      <p>This code should be fairly self-explanatory. We define a variable named "counter" and set it equal to 0. While the counter is less than 6, put the value of the counter. Also, each time the loop runs, add 1 to counter and set that as the new value of counter.</p><br><br>
+
+      <p>Now let's look at that same code in JavaScript:</p><br><br>
+
+      <code class="prettyprint">
+        counter = 0;<br><br>
+        while(counter < 6) {<br>
+        &nbsp; console.log(counter);<br>
+        &nbsp; counter++;<br>
+      }
+      </code>
+
+      <p>As you can see, the 'while' loop still evaluates a condition and continues running as long as the condition is true. The code above demonstrates the same example that we saw with Ruby, but you can also evaluate a condition without using numbers:</p><br><br>
+
+       <code class="prettyprint">
+        var condition = true;<br><br>
+        while(condition) {<br>
+        &nbsp; console.log("The condition is true!");<br>
+        &nbsp; condition = false;<br>
+      }
+      </code>
+
+      <p>Notice the "while(condition)" syntax in the above example. This is a shorthand way of saying "while condition === true". It is just shorter and easier to leave out the "=== true" portion and leave it as implied.</p><br><br>
+
+      <p><b>Beware of infinite loops!</b> Notice that inside of the loop, we change the condition to equal false. This is very important, because otherwise we would be creating a loop that would never end. This will cause your console to crash and is a mess all around. Make sure that you never create an infinite loop!</p><br><br>
+
+      <p class="sign_off">If you have any questions or comments, please send me either an <a href="mailto:morgan@codeshewrote.io">email</a> or a <a href="http://www.twitter.com/morganmccrory">tweet</a>. Happy coding!<br><br>Posted by Morgan McCrory</p>
+<br>
+<br>
+  </div>
+  </div>
+  <div class="bottom"><a href="http://morganmccrory.github.io/blog/c7-values.html"> &#8592; Previous Post</a></div></div>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  </body>
+</html>
