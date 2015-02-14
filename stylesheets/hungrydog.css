@@ -25,26 +25,26 @@ p {
   position: absolute;
   float: right;
   top: 490px;
-  right: 750px;
+  right: 800px;
 }
 
 #bone1 {
   position: absolute;
   float: right;
   top: 400px;
-  right: 300px;
+  right: 350px;
 }
 
 #bone2 {
   position: absolute;
   float: right;
   top: 200px;
-  right: 600px;
+  right: 650px;
 }
 
 #bacon {
   position: absolute;
   float: right;
   top: 190px;
-  right: 120px;
+  right: 150px;
 }
