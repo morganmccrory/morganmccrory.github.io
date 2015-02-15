@@ -1,0 +1,38 @@
+html {
+  font-family: arial;
+
+}
+body {
+    background-color:lightyellow;
+}
+h1 {
+  color: red;
+  text-align: center;
+  margin-right: -150px
+}
+h2{
+    color:blue;
+}
+h3 {
+    text-align: center;
+    margin-right: -150px;
+    color: orange;
+    margin-top: -15px
+}
+h4 {
+    color: purple;
+}
+#menu {
+  float: left;
+  position: fixed;
+  margin-top: -100px;
+  background-color: #d3d3d3;
+  border: 2px dashed black
+}
+main {
+    margin-left: 350px;
+    background-color: lightblue;
+}
+span {
+    padding-left: 5px
+}

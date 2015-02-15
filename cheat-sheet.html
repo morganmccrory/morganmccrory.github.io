@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+  <title>Zach and Morgan's DBC Git Cheat Sheet</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="http://z-lake.github.io/blog/stylesheets/cheat-sheet.css">
+</head>
+
+<body>
+  <h1>Zach and Morgan's DBC Git Cheat Sheet</h1>
+  <h3>Saturday February 14, 2015</h3>
+
+<div id="menu">
+  <h2>Menu</h2>
+  <ul>
+    <li> <a href="#intro">Intro</a></li>
+      <li> <a href="#making_changes">Making Changes</a></li>
+      <ul class="git">
+         <li> <a href="#gitstatus">git status</a></li>
+        <li> <a href="#gitadd">git add</a></li>
+        <li> <a href="#gitcommit">git commit -m "[description]"</a></li>
+        <li> <a href="#gitpush">git push</a></li>
+        <li> <a href="#gitdiff">git diff</a></li>
+        <li> <a href="#gitreset">git reset [file]</a></li> </ul>
+      <li> <a href="#group_changes">Group Changes</a></li>
+      <ul class="git">
+        <li> <a href="#branch">git branch</a></li>
+        <li> <a href="#gitcheckout">git checkout [branch name]</a></li>
+        <li> <a href="#gitmerge">git merge [branch]</a></li>
+        <li> <a href="#gitbranch_d">git branch -d [branch name]</a></li>
+        <li> <a href="#gitbranch">git branch [branch name]</a></li> </ul>
+      <li> <a href="#create_repo">Create Repositories</a></li>
+      <ul class="git">
+        <li> <a href="#gitinit">git init [project name]</a></li>
+        <li> <a href="#gitclone">git clone [URL]</a></li></ul>
+      <li> <a href="#refactored_filenames">Refactored Filenames</a></li>
+      <ul class="git">
+      <li> <a href="#gitrm">git rm [file]</a></li>
+        <li> <a href="#gitrm_cached">git rm --cached [file]</a></li>
+        <li> <a href="#gitmv">git mv [file original] [file renamed]</a></li></ul>
+      <li> <a href="#review_history">Review History</a></li>
+      <ul class="git">
+        <li> <a href="#gitlog">git log</a></li>
+        <li> <a href="#gitlog_follow">git log --follow [file]</a></li>
+        <li> <a href="#gitdiff_branch">git diff [first branch]...[second branch]</a></li>
+        <li> <a href="#gitshow">git show [commit]</a></li></ul>
+      <li> <a href="#redo_commits">Redo Commits</a></li>
+      <ul class="git">
+        <li> <a href="#gitreset">git reset [commit]</a></li>
+        <li> <a href="#gireset_hard">git reset --hard [commit]</a></li></ul>
+      <li> <a href="#add_resources">Additional Resources</a></li>
+  </ul>
+</div>
+
+<main>
+ <a name="intro"><h2>Intro to Git Commands</h2></a>
+  <p>
+    Git is a version control software system designed for facilitating GitHub activities. Version control is important for tracking changes and preventing loss of data. This cheat sheet provides common git commands for reference.
+  </p>
+   <a name="making_changes"><h2>Making Changes</h2></a>
+  <p>
+    These commands are used to review edits and changes to be made to the repository.
+  </p>
+      <a name="gitstatus"><h4>git status</h4></a>
+      <p>
+        Shows files to be commited.
+      </p>
+      <a name="gitadd"><h4>git add</h4></a>
+      <p>
+        Stages the changes to be committed.
+      </p>
+      <a name="gitcommit"><h4>git commit -m [description]</h4></a>
+      <p>
+        Records changes permanently to version history.
+      </p>
+      <a name="gitpush"><h4>git push</h4></a>
+      <p>
+        Uploads all local branch commits to GitHub.
+      </p>
+      <a name="gitdiff"><h4>git diff</h4></a>
+      <p>
+        Shows changes not currently staged to be committed.
+      </p>
+      <a name="gitreset"><h4>git reset [file]</h4></a>
+      <p>
+        Unstages a file from being committed, but preserves its content.
+      </p>
+  <a name="group_changes"><h2>Group Changes</h2></a>
+  <p>
+    These commands are for accessing and changing branches.
+  </p>
+      <a name="branch"><h4>git branch</h4></a>
+      <p>
+        Lists all branches in the current repository.
+      </p>
+      <a name="gitcheckout"><h4>git checkout [branch name]</h4></a>
+      <p>
+        Switches to specified branch and updates working directory.
+      </p>
+      <a name="gitmerge"><h4>git merge [branch]</h4></a>
+      <p>
+        Combines specified branch's history into current branch.
+      </p>
+      <a name="gitbranch_d"><h4>git branch -d [branch name]</h4></a>
+      <p>
+        Deletes specified branch.
+      </p>
+      <a name="gitbranch"><h4>git branch [branch name]</h4></a>
+      <p>
+        Creates a new branch.
+      </p>
+   <a name="create_repo"><h2>Create Repositories</h2></a>
+  <p>
+    These commands are for creating and changing repositories.
+  </p>
+      <a name="gitinit"><h4>git init [project name]</h4></a>
+      <p>
+        Creates new local repository with specified name.
+      </p>
+      <a name="gitclone"><h4>git clone [URL]</h4></a>
+      <p>
+        Downloads a project and its entire history from the specified URL.
+      </p>
+   <a name="refacotred_filenames"><h2>Refactored Filenames</h2></a>
+  <p>
+    These commands are for changing and removing files.
+  </p>
+      <a name="gitrm"><h4>git rm [file]</h4></a>
+      <p>
+        Deletes file from working directory and stages file for deletion.
+      </p>
+      <a name="gitrm_cached"><h4>git rm --cached [file]</h4></a>
+      <p>
+        Removes file from version control but keeps file locally.
+      </p>
+      <a name="gitmv"><h4>git mv [file original] [file renamed]</h4></a>
+      <p>
+        Changes file name and prepares for commit.
+      </p>
+  <a name="review_history"><h2>Review History</h2></a>
+  <p>
+    These commands are for inspecting the evolution of project files.
+  </p>
+      <a name="gitlog"><h4>git log</h4></a>
+      <p>
+        List history for current branch.
+      </p>
+      <a name="gitlog_follow"><h4>git log --follow [file]</h4></a>
+      <p>
+        Lists version history for specified file including renames.
+      </p>
+      <a name="gitdiff_branch"><h4>git diff [first branch]...[second branch]</h4></a>
+      <p>
+        Shows content differences between two branches.
+      </p>
+      <a name="gitshow"><h4>git show [commit]</h4></a>
+      <p>
+        Shows meta deta and content changes of a specific commit.
+      </p>
+  <a name="redo_commits"><h2>Redo Commits</h2></a>
+  <p>
+    These commands are for erasing mistakes and changing history.
+  </p>
+      <a name="gitreset"><h4>git reset [commit]</h4></a>
+      <p>
+        Undo all commits after specified commit.
+      </p>
+      <a name="gitreset_hard"><h4>git reset --hard [commit]</h4></a>
+      <p>
+        Discards all history and reverts back to specified commit.
+      </p>
+  <a name="add_resources"><h2>Additional Resources</h2></a>
+  <p>
+    Here are some links to helpful resources.
+  </p>
+      <ul>
+        <li><a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">GitHub Git Cheat Sheet</a></li>
+        <li></li>
+        <li></li>
+      </ul>
+</html>
