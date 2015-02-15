@@ -40,6 +40,7 @@ h4 {
 
 main {
     margin-left: 350px;
+    width: 450px;
     position: absolute;
     background-color: lightblue;
 }
