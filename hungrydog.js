@@ -6,14 +6,21 @@ var puppy = {
   canMove: true
 
 var move = function(direction) {
-  if(direction === 'left') {
-    this.posX -= 10;
-  } else if(direction === 'right') {
-    this.posX += 10;
-  } else if(direction === 'up') {
-    this.posY += 10;
-  } else if(direction === 'down') {
-    this.posY -= 10;
+  if(puppy.canMove) {
+    console.log('moving');
+    pup_move(bacon, baconImg);
+    pup_move(bone1, boneImg1);
+    pup_move(bone2, boneImg2);
+    if(direction === 'left') {
+      this.posX -= 10;
+      puppyImg.style.top = (puppy.posX + "px");
+    } else if(direction === 'right') {
+      this.posX += 10;
+    } else if(direction === 'up') {
+      this.posY += 10;
+    } else if(direction === 'down') {
+      this.posY -= 10;
+    }
   }
 
   bacon.posX = Math.floor((Math.random()*100)+1);
