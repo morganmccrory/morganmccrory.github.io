@@ -88,7 +88,7 @@ function ai_move(player, playerImg){
     }
   }else if (random === 2){
     // move down
-    if (player.y < 440){
+    if (player.y < 1000){
       player.y = (player.y + 40);
       playerImg.style.top = (player.y + "px");
     }
