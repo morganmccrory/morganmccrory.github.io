@@ -73,33 +73,4 @@ function move(direction){
   }
 }
 
-function ai_move(player, playerImg){
-  var random = Math.floor((Math.random() * 4) + 1);
-  // move up
-  if (random === 1){
-    if (player.y > 0){
-      player.y = (player.y - 40);
-      playerImg.style.top = (player.y + "px");
-    }
-  }else if (random === 2){
-    // move down
-    if (player.y < 440){
-      player.y = (player.y + 40);
-      playerImg.style.top = (player.y + "px");
-    }
-  }else if (random === 3){
-    // move right
-    if (player.x < 600){
-      player.x = (player.x + 40);
-      playerImg.style.left = (player.x + "px");
-    }
- }else{
-    //move left
-    if (player.x > 0){
-      player.x = (player.x - 40);
-      playerImg.style.left = (player.x + "px");
-    }
- }
-}
-
 document.onkeydown = move;
