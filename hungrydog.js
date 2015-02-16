@@ -1,5 +1,3 @@
-alert("Playing!");
-
 var puppy = {
   x: 490,
   y: 650,
