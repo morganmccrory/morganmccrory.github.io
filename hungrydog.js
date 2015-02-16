@@ -63,13 +63,6 @@ function move(direction){
         puppyImg.style.left = (puppy.x + "px");
       }
     }
-    status(alien, alienImg);
-    status(alien2, alienImg2);
-    status(alien3, alienImg3);
-    setTimeout(function(){
-      puppy.canMove = true;
-    }, 200)
-    puppy.canMove = false;
   }
 }
 
