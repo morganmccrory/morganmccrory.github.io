@@ -1,8 +1,9 @@
 var puppy = {
-  posX: 0,
-  posY: 0,
+  posX: 490,
+  posY: 650,
   hunger: 10,
-  success: false
+  success: false,
+  canMove: true
 
 var move = function(direction) {
   if(direction === 'left') {
@@ -22,41 +23,42 @@ var move = function(direction) {
 
   if(puppy.posX === bacon.posX && puppy.posY === bacon.posY) {
     puppy.hunger -= 5;
-    console.log("Yum, bacon is Pepper's favorite!")
+    alert("Yum, bacon is Pepper's favorite!")
   } else if(puppy.posX === bone.posX && puppy.posY === bone.posY) {
     puppy.hunger -= 3;
-    console.log("Mmm, Pepper ate a bone!")
+    alert("Mmm, Pepper ate a bone!")
   }
 
   if(puppy.hunger < 1) {
     success = true;
-    console.log("Thanks for feeding, Pepper! You win!");
+    alert("Thanks for feeding, Pepper! You win!");
   }
 
 };
 
 var bacon = {
-  positionVer: 300,
-  positionHor: 300
+  posX: 190,
+  posY: 50
 };
 
-var bone = {
-  positionVer: -10,
-  positionHor: 5
-}
+var bone1 = {
+  posX: 400,
+  posY: 250
+};
 
-// Driver Test Code
+var bone2 = {
+  posX: 200,
+  posY: 550
+};
 
-console.log(puppy.hunger);
-eat(bacon);
-console.log(puppy.hunger);
-eat(bone);
-console.log(puppy.hunger);
-moveLeft(puppy);
-console.log(puppy.positionHor);
-moveRight(puppy);
-console.log(puppy.positionHor);
-moveUp(puppy)
-console.log(puppy.positionVer);
-moveDown(puppy)
-console.log(puppy.positionVer);
+document.getElementById("up").onclick = function() {move("up");};
+document.getElementById("down").onclick = function() {move("down");};
+document.getElementById("right").onclick = function() {move("right");};
+document.getElementById("left").onclick = function() {move("left");};
+
+var puppyImg = document.getElementById("puppy");
+var baconImg = document.getElementById("bacon");
+var boneImg1 = document.getElementById("bone1");
+var boneImg2 = document.getElementById("bone2");
+
+document.onkeydown = move;
