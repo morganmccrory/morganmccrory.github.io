@@ -1,3 +1,13 @@
+document.getElementById("up").onclick = function() {move("up");};
+document.getElementById("down").onclick = function() {move("down");};
+document.getElementById("right").onclick = function() {move("right");};
+document.getElementById("left").onclick = function() {move("left");};
+
+var puppyImg = document.getElementById("puppy");
+var baconImg = document.getElementById("bacon");
+var boneImg1 = document.getElementById("bone1");
+var boneImg2 = document.getElementById("bone2");
+
 var puppy = {
   posX: 490,
   posY: 650,
@@ -57,15 +67,5 @@ var bone2 = {
   posX: 200,
   posY: 550
 };
-
-document.getElementById("up").onclick = function() {move("up");};
-document.getElementById("down").onclick = function() {move("down");};
-document.getElementById("right").onclick = function() {move("right");};
-document.getElementById("left").onclick = function() {move("left");};
-
-var puppyImg = document.getElementById("puppy");
-var baconImg = document.getElementById("bacon");
-var boneImg1 = document.getElementById("bone1");
-var boneImg2 = document.getElementById("bone2");
 
 document.onkeydown = move;
