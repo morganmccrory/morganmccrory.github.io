@@ -16,42 +16,6 @@ var puppy = {
   canMove: true
 };
 
-var move = function(direction) {
-  if(puppy.canMove) {
-    console.log('moving');
-    pup_move(bacon, baconImg);
-    pup_move(bone1, boneImg1);
-    pup_move(bone2, boneImg2);
-    if(direction === 'left') {
-      this.posX -= 10;
-      puppyImg.style.top = (puppy.posX + "px");
-    } else if(direction === 'right') {
-      this.posX += 10;
-    } else if(direction === 'up') {
-      this.posY += 10;
-    } else if(direction === 'down') {
-      this.posY -= 10;
-    }
-  }
-
-  bacon.posX = Math.floor((Math.random()*100)+1);
-  bacon.posY = Math.floor((Math.random()*100)+1);
-  bone.posX = Math.floor((Math.random()*100)+1);
-  bone.posY = Math.floor((Math.random()*100)+1);
-
-  if(puppy.posX === bacon.posX && puppy.posY === bacon.posY) {
-    puppy.hunger -= 5;
-    alert("Yum, bacon is Pepper's favorite!")
-  } else if(puppy.posX === bone.posX && puppy.posY === bone.posY) {
-    puppy.hunger -= 3;
-    alert("Mmm, Pepper ate a bone!")
-  }
-
-  if(puppy.hunger < 1) {
-    success = true;
-    alert("Thanks for feeding, Pepper! You win!");
-  }
-
 var bacon = {
   posX: 190,
   posY: 50
