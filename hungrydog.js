@@ -1,3 +1,5 @@
+document.onkeydown = move;
+
 var puppy = {
   x: 40,
   y: 200,
@@ -104,5 +106,3 @@ function ai_move(player, playerImg){
     }
  }
 }
-
-document.onkeydown = move;
