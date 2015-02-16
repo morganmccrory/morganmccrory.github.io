@@ -105,25 +105,4 @@ function ai_move(player, playerImg){
  }
 }
 
-function status(enemy, enemyImg){
-  if (puppy.x === enemy.x && puppy.y === enemy.y && enemy.alive){
-    alienCount -= 1;
-    enemy.alive = false;
-    console.log ('DIE!');
-    setTimeout(function(){
-      console.log('killing alien');
-
-      enemyImg.style.opacity = "0";
-      enemyImg.style.transform = 'rotate(360deg) scale(5)';
-      if (alienCount < 1){
-        alert("Congratulations you killed the evil Space-Squid-Squad. Now you're free to roam the galaxy in peace... YOU WIN!");
-      } else {
-        alert("You killed an evil Space-Squid!");
-      }
-    }, 400);
-  }
-}
-
-
-
 document.onkeydown = move;
