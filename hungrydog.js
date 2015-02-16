@@ -1,26 +1,26 @@
 var puppy = {
-  x: 490,
-  y: 650,
+  x: 40,
+  y: 200,
   alive: true,
   won: false,
   canMove: true,
 };
 
-var bacon = {
-  x: 190,
-  y: 50,
+var alien = {
+  x: 560,
+  y: 80,
   alive: true,
 };
 
-var bone1 = {
-  x: 400,
+var alien2 = {
+  x: 560,
   y: 200,
   alive: true,
 };
 
-var bone2 = {
-  x: 200,
-  y: 500,
+var alien3 = {
+  x: 560,
+  y: 320,
   alive: true,
 };
 
@@ -30,27 +30,27 @@ document.getElementById("right").onclick = function() {move(39);};
 document.getElementById("left").onclick = function() {move(37);};
 
 var puppyImg = document.getElementById("puppy");
-var baconImg = document.getElementById("bacon");
-var boneImg1 = document.getElementById("bone1");
-var boneImg2 = document.getElementById("bone2");
+var alienImg = document.getElementById("alien");
+var alienImg2 = document.getElementById("alien2");
+var alienImg3 = document.getElementById("alien3");
 
 
 
-var baconCount = 3;
+var alienCount = 3;
 
 function move(direction){
   if (puppy.canMove){
     console.log('moving');
-    ai_move(bacon, baconImg);
-    ai_move(bone1, boneImg1);
-    ai_move(bone2, boneImg2);
+    ai_move(alien, alienImg);
+    ai_move(alien2, alienImg2);
+    ai_move(alien3, alienImg3);
     if (direction.keyCode === 38 || direction === 38 || direction.keyCode === 73){ // move up
       if (puppy.y > 0){
         puppy.y = (puppy.y - 40);
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 40 || direction === 40 || direction.keyCode === 75){ // move down
-      if (puppy.y < 1000){
+      if (puppy.y < 440){
         puppy.y = (puppy.y + 40);
         puppyImg.style.top = (puppy.y + "px");
       }
@@ -66,9 +66,9 @@ function move(direction){
         puppyImg.style.left = (puppy.x + "px");
       }
     }
-    status(bacon, baconImg);
-    status(bone1, boneImg1);
-    status(bone2, boneImg2);
+    status(alien, alienImg);
+    status(alien2, alienImg2);
+    status(alien3, alienImg3);
     setTimeout(function(){
       puppy.canMove = true;
     }, 200)
@@ -86,7 +86,7 @@ function ai_move(player, playerImg){
     }
   }else if (random === 2){
     // move down
-    if (player.y < 1000){
+    if (player.y < 440){
       player.y = (player.y + 40);
       playerImg.style.top = (player.y + "px");
     }
@@ -107,15 +107,15 @@ function ai_move(player, playerImg){
 
 function status(enemy, enemyImg){
   if (puppy.x === enemy.x && puppy.y === enemy.y && enemy.alive){
-    baconCount -= 1;
+    alienCount -= 1;
     enemy.alive = false;
     console.log ('DIE!');
     setTimeout(function(){
-      console.log('killing bacon');
+      console.log('killing alien');
 
       enemyImg.style.opacity = "0";
       enemyImg.style.transform = 'rotate(360deg) scale(5)';
-      if (baconCount < 1){
+      if (alienCount < 1){
         alert("Congratulations you killed the evil Space-Squid-Squad. Now you're free to roam the galaxy in peace... YOU WIN!");
       } else {
         alert("You killed an evil Space-Squid!");
@@ -123,5 +123,7 @@ function status(enemy, enemyImg){
     }, 400);
   }
 }
+
+
 
 document.onkeydown = move;
