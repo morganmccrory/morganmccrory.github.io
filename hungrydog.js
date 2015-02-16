@@ -1,4 +1,4 @@
-document.onkeydown = move();
+document.onkeydown = move;
 
 var puppy = {
   x: 40,
@@ -46,12 +46,12 @@ function move(direction){
     ai_move(alien, alienImg);
     ai_move(alien2, alienImg2);
     ai_move(alien3, alienImg3);
-    if (direction.keyCode === 38 || direction === 38 || direction.keyCode === 73){ // move up
+    if (direction.keyCode === 38 || direction === 38){ // move up
       if (puppy.y > 0){
         puppy.y = (puppy.y - 40);
         puppyImg.style.top = (puppy.y + "px");
       }
-    }else if (direction.keyCode === 40 || direction === 40 || direction.keyCode === 75){ // move down
+    }else if (direction.keyCode === 40 || direction === 40){ // move down
       if (puppy.y < 440){
         puppy.y = (puppy.y + 40);
         puppyImg.style.top = (puppy.y + "px");
