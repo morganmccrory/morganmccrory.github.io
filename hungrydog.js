@@ -41,9 +41,6 @@ var alienCount = 3;
 function move(direction){
   if (puppy.canMove){
     console.log('moving');
-    ai_move(alien, alienImg);
-    ai_move(alien2, alienImg2);
-    ai_move(alien3, alienImg3);
     if (direction.keyCode === 38 || direction === 38){ // move up
       if (puppy.y > 0){
         puppy.y = (puppy.y - 40);
