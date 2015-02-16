@@ -26,8 +26,6 @@ p {
   float: right;
   top: 490px;
   right: 650px;
-  -webkit-transition: 0.4s; /* For Safari 3.1 to 6.0 */
-  transition: 0.4s;
 }
 
 #bone1 {
