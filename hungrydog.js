@@ -1,28 +1,28 @@
 alert("Playing!");
 
 var puppy = {
-  x: 40,
-  y: 200,
+  x: 490,
+  y: 650,
   alive: true,
   won: false,
   canMove: true,
 };
 
 var bacon = {
-  x: 560,
-  y: 80,
+  x: 190,
+  y: 50,
   alive: true,
 };
 
 var bone1 = {
-  x: 560,
+  x: 400,
   y: 200,
   alive: true,
 };
 
 var bone2 = {
-  x: 560,
-  y: 320,
+  x: 200,
+  y: 500,
   alive: true,
 };
 
@@ -52,7 +52,7 @@ function move(direction){
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 40 || direction === 40 || direction.keyCode === 75){ // move down
-      if (puppy.y < 440){
+      if (puppy.y < 1000){
         puppy.y = (puppy.y + 40);
         puppyImg.style.top = (puppy.y + "px");
       }
