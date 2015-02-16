@@ -1,7 +1,9 @@
-document.getElementById("up").onclick = function() {move("up");};
-document.getElementById("down").onclick = function() {move("down");};
-document.getElementById("right").onclick = function() {move("right");};
-document.getElementById("left").onclick = function() {move("left");};
+alert("Playing!");
+
+document.getElementById("up").onclick = function() {move(38);};
+document.getElementById("down").onclick = function() {move(40);};
+document.getElementById("right").onclick = function() {move(39);};
+document.getElementById("left").onclick = function() {move(37);};
 
 var puppyImg = document.getElementById("puppy");
 var baconImg = document.getElementById("bacon");
