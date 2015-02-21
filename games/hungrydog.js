@@ -70,28 +70,27 @@ function move(direction){
 }
 }
 
-function food_move(player, playerImg){
+function food_move(food, foodImg){
   var random = Math.floor((Math.random() * 4) + 1);
-  // move up
   if (random === 1){
-    if (player.y > 0){
-      player.y = (player.y - 40);
-      playerImg.style.top = (player.y + "px");
+    if (food.y > 50){
+      food.y = (food.y - 10);
+      foodImg.style.top = (food.y + "px");
     }
   }else if (random === 2){
-    if (player.y < 440){
-      player.y = (player.y + 40);
-      playerImg.style.top = (player.y + "px");
+    if (food.y < 490){
+      food.y = (food.y + 10);
+      foodImg.style.top = (food.y + "px");
     }
   }else if (random === 3){
-    if (player.x < 600){
-      player.x = (player.x + 40);
-      playerImg.style.left = (player.x + "px");
+    if (food.x < 1200){
+      food.x = (food.x + 10);
+      foodImg.style.left = (food.x + "px");
     }
   }else{
-    if (player.x > 0){
-      player.x = (player.x - 40);
-      playerImg.style.left = (player.x + "px");
+    if (food.x > 550){
+      food.x = (food.x - 10);
+      foodImg.style.left = (food.x + "px");
     }
  }
 }
