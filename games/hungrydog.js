@@ -40,12 +40,12 @@ function move(direction){
   if (puppy.canMove){
     console.log('moving');
     if (direction.keyCode === 38 || direction === 38){ // move up
-      if (puppy.y > 0){
+      if (puppy.y > 50){
         puppy.y = (puppy.y - 10);
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 40 || direction === 40){ // move down
-      if (puppy.y < 1100){
+      if (puppy.y < 490){
         puppy.y = (puppy.y + 10);
         puppyImg.style.top = (puppy.y + "px");
       }
