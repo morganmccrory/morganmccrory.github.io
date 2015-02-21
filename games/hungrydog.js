@@ -1,7 +1,7 @@
 var puppy = {
   x: 550,
   y: 490,
-  alive: true,
+  hungry: true,
   won: false,
   canMove: true,
 };
@@ -9,19 +9,19 @@ var puppy = {
 var bone1 = {
   x: 750,
   y: 200,
-  alive: true,
+  hungry: true,
 };
 
 var bone2 = {
   x: 1100,
   y: 400,
-  alive: true,
+  hungry: true,
 };
 
 var bacon = {
   x: 1150,
   y: 190,
-  alive: true,
+  hungry: true,
 };
 
 document.getElementById("up").onclick = function() {move(38);};
@@ -44,23 +44,23 @@ function move(direction){
   if (puppy.canMove){
     if (direction.keyCode === 38 || direction === 38){ // move up
       if (puppy.y > 50){
-        puppy.y = (puppy.y - 10);
+        puppy.y = (puppy.y - 20);
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 40 || direction === 40){ // move down
       if (puppy.y < 490){
-        puppy.y = (puppy.y + 10);
+        puppy.y = (puppy.y + 20);
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 39 || direction == 39){ // move right
       if (puppy.x < 1160){
-        puppy.x = (puppy.x + 10);
+        puppy.x = (puppy.x + 20);
         puppyImg.style.left = (puppy.x + "px");
       }
 
     }else if (direction.keyCode === 37 || direction == 37){ // move left
       if (puppy.x > 550){
-        puppy.x = (puppy.x - 10);
+        puppy.x = (puppy.x - 20);
         puppyImg.style.left = (puppy.x + "px");
       }
     }
@@ -88,7 +88,7 @@ function food_move(food, foodImg){
       foodImg.style.top = (food.y + "px");
     }
   }else if (random === 3){
-    if (food.x < 1200){
+    if (food.x < 1160){
       food.x = (food.x + 20);
       foodImg.style.left = (food.x + "px");
     }
@@ -101,9 +101,9 @@ function food_move(food, foodImg){
 }
 
 function eat(food, foodImg){
-  if (puppy.x === food.x && puppy.y === food.y && food.alive){
+  if (puppy.x === food.x && puppy.y === food.y && food.hungry){
     foodCount -= 1;
-    food.alive = false;
+    food.hungry = false;
     setTimeout(function(){
       foodImg.style.opacity = "0";
       foodImg.style.transform = 'rotate(360deg) scale(5)';
