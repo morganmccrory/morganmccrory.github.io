@@ -34,7 +34,7 @@ var boneImg1 = document.getElementById("bone1");
 var boneImg2 = document.getElementById("bone2");
 var baconImg = document.getElementById("bacon");
 
-var boneCount = 3;
+var foodCount = 3;
 
 function move(direction){
   if (puppy.canMove){
@@ -65,6 +65,13 @@ function move(direction){
       }
     }
   }
+    status(bone1, boneImg1);
+    status(bone2, boneImg2);
+    status(bacon, baconImg);
+    setTimeout(function(){
+      puppy.canMove = true;
+    }, 200)
+    puppy.canMove = false;
 }
 }
 
@@ -91,6 +98,22 @@ function food_move(food, foodImg){
       foodImg.style.left = (food.x + "px");
     }
  }
+}
+
+function eat(food, foodImg){
+  if (puppy.x === food.x && puppy.y === food.y && food.alive){
+    foodCount -= 1;
+    food.alive = false;
+    setTimeout(function(){
+      foodImg.style.opacity = "0";
+      foodImg.style.transform = 'rotate(360deg) scale(5)';
+      if (foodCount < 1){
+        alert("Pepper is full! Thanks for feeding her!! YOU WIN!!!");
+      } else {
+        alert("Yummy!");
+      }
+    }, 400);
+  }
 }
 
 document.onkeydown = move;
