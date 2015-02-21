@@ -1,6 +1,6 @@
 var puppy = {
-  x: 100,
-  y: 1000,
+  x: 400,
+  y: 400,
   alive: true,
   won: false,
   canMove: true,
