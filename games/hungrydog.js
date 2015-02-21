@@ -50,13 +50,13 @@ function move(direction){
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 39 || direction == 39){ // move right
-      if (puppy.x < 600){
+      if (puppy.x < 1000){
         puppy.x = (puppy.x + 10);
         puppyImg.style.left = (puppy.x + "px");
       }
 
     }else if (direction.keyCode === 37 || direction == 37){ // move left
-      if (puppy.x > 0){
+      if (puppy.x > 550){
         puppy.x = (puppy.x - 10);
         puppyImg.style.left = (puppy.x + "px");
       }
