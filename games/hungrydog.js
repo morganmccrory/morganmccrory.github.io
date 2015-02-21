@@ -38,12 +38,10 @@ var boneCount = 3;
 
 function move(direction){
   if (puppy.canMove){
-    console.log('moving');
     food_move(bone1, boneImg1);
     food_move(bone2, boneImg2);
     food_move(bacon, baconImg);
   if (puppy.canMove){
-    console.log('moving');
     if (direction.keyCode === 38 || direction === 38){ // move up
       if (puppy.y > 50){
         puppy.y = (puppy.y - 10);
@@ -74,22 +72,22 @@ function food_move(food, foodImg){
   var random = Math.floor((Math.random() * 4) + 1);
   if (random === 1){
     if (food.y > 50){
-      food.y = (food.y - 10);
+      food.y = (food.y - 20);
       foodImg.style.top = (food.y + "px");
     }
   }else if (random === 2){
     if (food.y < 490){
-      food.y = (food.y + 10);
+      food.y = (food.y + 20);
       foodImg.style.top = (food.y + "px");
     }
   }else if (random === 3){
     if (food.x < 1200){
-      food.x = (food.x + 10);
+      food.x = (food.x + 20);
       foodImg.style.left = (food.x + "px");
     }
   }else{
     if (food.x > 550){
-      food.x = (food.x - 10);
+      food.x = (food.x - 20);
       foodImg.style.left = (food.x + "px");
     }
  }
