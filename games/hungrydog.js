@@ -41,23 +41,23 @@ function move(direction){
     console.log('moving');
     if (direction.keyCode === 38 || direction === 38){ // move up
       if (puppy.y > 0){
-        puppy.y = (puppy.y - 40);
+        puppy.y = (puppy.y - 10);
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 40 || direction === 40){ // move down
       if (puppy.y < 1100){
-        puppy.y = (puppy.y + 40);
+        puppy.y = (puppy.y + 10);
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 39 || direction == 39){ // move right
       if (puppy.x < 600){
-        puppy.x = (puppy.x + 40);
+        puppy.x = (puppy.x + 10);
         puppyImg.style.left = (puppy.x + "px");
       }
 
     }else if (direction.keyCode === 37 || direction == 37){ // move left
       if (puppy.x > 0){
-        puppy.x = (puppy.x - 40);
+        puppy.x = (puppy.x - 10);
         puppyImg.style.left = (puppy.x + "px");
       }
     }
