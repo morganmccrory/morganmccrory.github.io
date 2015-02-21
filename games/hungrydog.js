@@ -45,7 +45,7 @@ function move(direction){
         puppyImg.style.top = (puppy.y + "px");
       }
     }else if (direction.keyCode === 40 || direction === 40){ // move down
-      if (puppy.y < 440){
+      if (puppy.y < 1100){
         puppy.y = (puppy.y + 40);
         puppyImg.style.top = (puppy.y + "px");
       }
