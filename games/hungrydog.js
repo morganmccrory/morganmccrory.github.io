@@ -64,9 +64,9 @@ function move(direction){
         puppyImg.style.left = (puppy.x + "px");
       }
     }
-    status(bone1, boneImg1);
-    status(bone2, boneImg2);
-    status(bacon, baconImg);
+    eat(bone1, boneImg1);
+    eat(bone2, boneImg2);
+    eat(bacon, baconImg);
     setTimeout(function(){
       puppy.canMove = true;
     }, 200)
