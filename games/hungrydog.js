@@ -101,7 +101,7 @@ function food_move(food, foodImg){
 }
 
 function eat(food, foodImg){
-  if (puppy.x === food.x && puppy.y === food.y && food.hungry){
+  if ((puppy.x < (food.x + 5)) || (puppy.x > (food.x - 5)) && ((puppy.y < (food.y + 5)) || (puppy.y > (food.y - 5))) && food.hungry){
     foodCount -= 1;
     food.hungry = false;
     setTimeout(function(){
