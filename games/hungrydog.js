@@ -7,20 +7,20 @@ var puppy = {
 };
 
 var bone1 = {
-  x: 560,
-  y: 80,
-  alive: true,
-};
-
-var bone2 = {
-  x: 560,
+  x: 750,
   y: 200,
   alive: true,
 };
 
+var bone2 = {
+  x: 1100,
+  y: 400,
+  alive: true,
+};
+
 var bacon = {
-  x: 560,
-  y: 320,
+  x: 1150,
+  y: 190,
   alive: true,
 };
 
